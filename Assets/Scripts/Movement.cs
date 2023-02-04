@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class Movement : MonoBehaviour
 {
@@ -11,11 +13,14 @@ public class Movement : MonoBehaviour
         jumpForce,
         turnSmoothTime,
         turnSmoothVelocity;
+    public Animator anim;
+    public LayerMask layer;
+    private bool isJumping,
+        isGrounded;
     private float gravity = 10f;
     private float fallVelocity;
     private Vector3 moveVel;
     private Vector3 playerInput;
-    private bool jumping;
     private Vector3 camRight;
     private Vector3 camForward;
 
@@ -25,14 +30,12 @@ public class Movement : MonoBehaviour
         float vertical = Input.GetAxisRaw("Vertical");
         playerInput = new Vector3(horizontal, 0f, vertical);
 
-        //if (controller.isGrounded)
-        //{
-            playerInput = Vector3.ClampMagnitude(playerInput, 1f);
+        playerInput = Vector3.ClampMagnitude(playerInput, 1f);
 
-            camDir();
+        camDir();
 
 
-            moveVel = playerInput.x * camRight + playerInput.z * camForward;
+        moveVel = playerInput.x * camRight + playerInput.z * camForward;
         target.transform.LookAt(target.transform.position + moveVel);
         if (moveVel.magnitude >= 0.1f)
         transform.rotation = Quaternion.Lerp(transform.rotation, target.rotation, 5 * Time.deltaTime);
@@ -40,46 +43,33 @@ public class Movement : MonoBehaviour
         JumpVerifier();
         controller.Move(moveVel * speed * Time.deltaTime);
 
-        //controller.transform.LookAt(controller.transform.position + moveVel);
-        jumping = false;
-            /*float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
-            float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
-            transform.rotation = Quaternion.Euler(0f, angle, 0f);
-            Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;*/
-            //moveVel = moveDir;
-
-            
-
-
-
-        //}
-        /*else if (!controller.isGrounded && jumping)
+        if (moveVel.magnitude >= 0.1 && controller.isGrounded)
         {
-            float n = 0.4f;
-            if (horizontal >= n)
-                moveVel.x = target.right.x * speed;
-            else if (horizontal <= -n)
-                moveVel.x = target.right.x * -speed;
-            if (vertical >= n)
-                moveVel.z = target.forward.z * speed;
-            else if (vertical <= -n)
-                moveVel.z = target.forward.z * -speed;
+            anim.SetBool("IsMoving", true);
+        }
+        else if (controller.isGrounded)
+        {
+            anim.SetBool("IsMoving", false);
         }
 
-        if (Input.GetButtonDown("Jump") && controller.isGrounded)
+        if (controller.isGrounded)
         {
-            moveVel.y = jumpSpeed;
-            jumping = true;
-        }*/
-
-        if (moveVel.z >= 0.1)
-        {
-            //GetComponent<PlayerController>().anim.SetBool("Running", true);
+            isGrounded = true;
+            anim.SetBool("IsGrounded", isGrounded);
+            isJumping = false;
+            anim.SetBool("IsJumping", isJumping);
+            anim.SetBool("IsFalling", false);
         }
-        /*else
-            GetComponent<PlayerController>().anim.SetBool("Running", false);*/
-
-        //moveVel.y += gravity * Time.deltaTime;
+        else
+        {
+            Vector3 direction = -transform.up;
+            if (!Physics.Raycast(transform.position, direction, 2, ~layer))
+            {
+                isGrounded = false;
+                anim.SetBool("IsGrounded", isGrounded);
+                anim.SetBool("IsFalling", true);
+            }
+        }
     }
 
     void SetGravity()
@@ -94,7 +84,6 @@ public class Movement : MonoBehaviour
             fallVelocity -= gravity * Time.deltaTime;
             moveVel.y = fallVelocity;
         }
-        //moveVel.y = -gravity * Time.deltaTime;
     }
 
     void camDir()
@@ -111,10 +100,13 @@ public class Movement : MonoBehaviour
 
     void JumpVerifier()
     {
-        if (controller.isGrounded && Input.GetButtonDown("Jump"))
+        if (isGrounded && !isJumping && Input.GetButtonDown("Jump"))
         {
             fallVelocity = jumpForce;
             moveVel.y = fallVelocity;
+            isJumping = true;
+            anim.SetBool("IsJumping", isJumping);
+            anim.SetBool("IsFalling", true);
         }
     }
 }

@@ -1219,6 +1219,7 @@ GameObject:
   - component: {fileID: 2673592820024983905}
   - component: {fileID: 2673592820024983906}
   - component: {fileID: 2673592820024983916}
+  - component: {fileID: 6052521911349940456}
   m_Layer: 0
   m_Name: Wakan01
   m_TagString: Untagged
@@ -1314,6 +1315,10 @@ MonoBehaviour:
   jumpForce: 2
   turnSmoothTime: 0.1
   turnSmoothVelocity: 0
+  anim: {fileID: 6052521911349940456}
+  layer:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!114 &2673592820024983916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1334,6 +1339,26 @@ MonoBehaviour:
   remainingEnemies: 0
   swordPrefab: {fileID: 0}
   hand: {fileID: 0}
+--- !u!95 &6052521911349940456
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3016263107565780023}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 25ba41d46a68ccf40abc9e5c739c080b, type: 3}
+  m_Controller: {fileID: 9100000, guid: 743853957e8433740ae8d195947f1b90, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &3035287737620176748
 GameObject:
   m_ObjectHideFlags: 0
