@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
         jumpSpeed,
         turnSmoothTime,
         turnSmoothVelocity;
-    private float gravity = -20f;
+    private float gravity = 250f;
     private Vector3 moveVel;
     private Vector3 playerInput;
     private bool jumping;
@@ -33,9 +33,13 @@ public class Movement : MonoBehaviour
 
             moveVel = playerInput.x * camRight + playerInput.z * camForward;
         target.transform.LookAt(target.transform.position + moveVel);
+        if (moveVel.magnitude >= 0.1f)
         transform.rotation = Quaternion.Lerp(transform.rotation, target.rotation, 5 * Time.deltaTime);
-            //controller.transform.LookAt(controller.transform.position + moveVel);
-            jumping = false;
+        SetGravity();
+        controller.Move(moveVel * speed * Time.deltaTime);
+
+        //controller.transform.LookAt(controller.transform.position + moveVel);
+        jumping = false;
             /*float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
@@ -74,7 +78,11 @@ public class Movement : MonoBehaviour
             GetComponent<PlayerController>().anim.SetBool("Running", false);*/
 
         //moveVel.y += gravity * Time.deltaTime;
-        controller.Move(moveVel * speed * Time.deltaTime);
+    }
+
+    void SetGravity()
+    {
+        moveVel.y = -gravity * Time.deltaTime;
     }
 
     void camDir()
