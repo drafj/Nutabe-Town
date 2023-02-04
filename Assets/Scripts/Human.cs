@@ -15,9 +15,9 @@ public class Human : MonoBehaviour
 
     public void Attack(GameObject target, int damage, Transform hand)
     {
-        anim.SetBool("Running", false);
-        anim.SetTrigger("Attacking");
-        GameObject go = Instantiate(manager.attackHitbox, hand);
+        /*anim.SetBool("Running", false);
+        anim.SetTrigger("Attacking");*/
+        //GameObject go = Instantiate(manager.attackHitbox, hand);
         /*go.GetComponent<Attack>().target = target;
         go.GetComponent<Attack>().damage = damage;*/
     }

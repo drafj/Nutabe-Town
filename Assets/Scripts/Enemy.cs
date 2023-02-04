@@ -31,7 +31,7 @@ public class Enemy : Human
     {
         if (agent.enabled && !knocked)
         {
-            anim.SetBool("Running", true);
+            //anim.SetBool("Running", true);
             agent.SetDestination(point);
         }
     }

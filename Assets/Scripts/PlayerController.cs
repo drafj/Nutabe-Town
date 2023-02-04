@@ -156,11 +156,11 @@ public class PlayerController : Human
     public void UpdateEnemyHealthBar()
     {
         ClosestEnemy();
-        manager.EnemyHealthBar.SetHealth(enemyCloser.GetComponent<Human>().life);
-        if (DistanceTo(enemyCloser.transform.position) <= 8 && enemyCloser.GetComponent<Human>().life > 0)
+        //manager.EnemyHealthBar.SetHealth(enemyCloser.GetComponent<Human>().life);
+        /*if (DistanceTo(enemyCloser.transform.position) <= 8 && enemyCloser.GetComponent<Human>().life > 0)
             manager.EnemyHealthBar.gameObject.SetActive(true);
         else
-            manager.EnemyHealthBar.gameObject.SetActive(false);
+            manager.EnemyHealthBar.gameObject.SetActive(false);*/
     }
 
     public void UpdateUIItem(List<TextMeshProUGUI> items, int actualCount)
