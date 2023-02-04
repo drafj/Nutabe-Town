@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
         potions,
         swords;
     public TextMeshProUGUI powerUp;
+    public List<GameObject> coins = new List<GameObject>();
 
     private void Awake()
     {

@@ -42,8 +42,11 @@ public class Enemy : Human
         while (agent.enabled)
         {
             playerPosition = manager.player.transform.position;
-
-            if (DistanceTo(playerPosition) <= sightRange)
+            if (GameManager.instance.coins.Count > 0)
+            {
+                MoveToPoint(GameManager.instance.coins[0].transform.position);
+            }
+            else if (DistanceTo(playerPosition) <= sightRange)
             {
                 MoveToPoint(playerPosition);
                 if (DistanceTo(playerPosition) <= attackRange)

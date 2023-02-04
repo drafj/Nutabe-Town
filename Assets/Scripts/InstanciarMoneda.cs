@@ -11,7 +11,6 @@ public class InstanciarMoneda : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown("l"))
@@ -24,5 +23,6 @@ public class InstanciarMoneda : MonoBehaviour
     {
         GameObject esferaCreada = Instantiate(esferaPrueba, creador);
         esferaCreada.transform.parent = null;
+        GameManager.instance.coins.Add(esferaCreada);
     }
 }
