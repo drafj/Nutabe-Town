@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour
     public Transform cam;
     public Transform target;
     public float speed,
-        jumpSpeed,
+        jumpForce,
         turnSmoothTime,
         turnSmoothVelocity;
     private float gravity = 250f;
@@ -36,6 +36,7 @@ public class Movement : MonoBehaviour
         if (moveVel.magnitude >= 0.1f)
         transform.rotation = Quaternion.Lerp(transform.rotation, target.rotation, 5 * Time.deltaTime);
         SetGravity();
+        JumpVerifier();
         controller.Move(moveVel * speed * Time.deltaTime);
 
         //controller.transform.LookAt(controller.transform.position + moveVel);
@@ -82,6 +83,10 @@ public class Movement : MonoBehaviour
 
     void SetGravity()
     {
+        if (controller.isGrounded)
+        {
+
+        }
         moveVel.y = -gravity * Time.deltaTime;
     }
 
@@ -95,5 +100,13 @@ public class Movement : MonoBehaviour
 
         camForward = camForward.normalized;
         camRight = camRight.normalized;
+    }
+
+    void JumpVerifier()
+    {
+        if (controller.isGrounded && Input.GetButtonDown("Jump"))
+        {
+
+        }
     }
 }
