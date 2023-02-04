@@ -13,13 +13,14 @@ public class Human : MonoBehaviour
         battlesLost,
         gamesPlayed;
 
-    public void Attack(GameObject target, int damage, Transform hand)
+    public IEnumerator Attack(Transform hand)
     {
-        /*anim.SetBool("Running", false);
-        anim.SetTrigger("Attacking");*/
-        //GameObject go = Instantiate(manager.attackHitbox, hand);
-        /*go.GetComponent<Attack>().target = target;
-        go.GetComponent<Attack>().damage = damage;*/
+        yield return new WaitForSeconds(0.3f);
+        anim.SetBool("IsMoving", false);
+        anim.SetTrigger("Attack");
+        hand.gameObject.SetActive(true);
+        yield return new WaitForSeconds(0.3f);
+        hand.gameObject.SetActive(false);
     }
 
     public float DistanceTo(Vector3 obj)

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -44,45 +45,24 @@ public class Enemy : Human
 
             if (DistanceTo(playerPosition) <= sightRange)
             {
-                Vector3 direction = (playerPosition - transform.position);
-                RaycastHit hit;
-                if (Physics.Raycast(transform.position, direction, out hit, sightRange, ~layer))
+                MoveToPoint(playerPosition);
+                if (DistanceTo(playerPosition) <= attackRange)
                 {
-                    if (hit.collider.GetComponent<PlayerController>() != null)
-                    {
-                        patrol = false;
-                        if (DistanceTo(playerPosition) <= attackRange)
-                        {
-                            anim.SetTrigger("Attack");
-                            agent.isStopped = true;
-                            Vector3 targetPlayer = new Vector3(playerPosition.x, transform.position.y, playerPosition.z);
-                            transform.LookAt(targetPlayer);
-                            Attack(manager.player, 2, hand);
-                            yield return new WaitForSeconds(2.5f);
-                        }
-                        else
-                        {
-                            if (!knocked)
-                            {
-                                MoveToPoint(playerPosition);
-                                agent.isStopped = false;
-                            }
-                        }
-                    }
-                    else
-                    {
-                        patrol = true;
-                        goto patrol;
-                    }
+                    anim.SetTrigger("Attack");
+                    agent.isStopped = true;
+                    Vector3 targetPlayer = new Vector3(playerPosition.x, transform.position.y, playerPosition.z);
+                    transform.LookAt(targetPlayer);
+                    StartCoroutine(Attack(hand));
+                    yield return new WaitForSeconds(2f);
+                }
+
+                else
+                {
+                    MoveToPoint(playerPosition);
+                    agent.isStopped = false;
                 }
             }
             else
-            {
-                patrol = true;
-                goto patrol;
-            }
-        patrol:
-            if (patrol)
             {
                 if (patrolPoints.Count <= 0)
                     yield return null;
