@@ -178,9 +178,9 @@ public class PlayerController : Human
 
     void Update()
     {
-        UpdateEnemyHealthBar();
+        //UpdateEnemyHealthBar();
 
-        if (life > 0)
+        /*if (life > 0)
         {
             if (Input.GetMouseButtonDown(0) && !attackColdown && movement.enabled && !manager.inventory.activeSelf)
             {
@@ -200,6 +200,6 @@ public class PlayerController : Human
             {
                 ThrowSword();
             }
-        }
+        }*/
     }
 }
