@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - Axe
   - cuerda
+  - Enemy
   layers:
   - Default
   - TransparentFX

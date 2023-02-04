@@ -8,7 +8,6 @@ public class DestroyString : MonoBehaviour
     public GameObject axe;
     public GameObject cuerda;
     public Rigidbody rbTrap;
-    public ChangeScene changeScene;
 
     void Start()
     {
@@ -28,11 +27,6 @@ public class DestroyString : MonoBehaviour
         {
             Destroy(axe);
             gotAxe = true;
-        }
-
-        if (other.tag == "Door")
-        {
-            changeScene.LoadScene("nivel2");
         }
     }
 
