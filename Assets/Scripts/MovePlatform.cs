@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,10 +11,9 @@ public class MovePlatform : MonoBehaviour
 
     public int curPosition;
     public int nextPosition;
-    void Start()
-    {
-        
-    }
+
+    public bool isOnMovingPlaform;
+    public GameObject myPlayer;
 
     // Update is called once per frame
     private void FixedUpdate()
@@ -30,5 +30,23 @@ public class MovePlatform : MonoBehaviour
                 nextPosition = 0;
             }
         }
+        /*if (isOnMovingPlaform)
+        {
+            myPlayer.transform.SetParent(this.transform);
+        }
+        else
+        {
+            myPlayer.transform.SetParent(null);
+        }*/
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.tag == "Plataform")
+        {
+            Debug.Log("aa");
+            //isOnMovingPlaform = true;            
+        }
+        
     }
 }

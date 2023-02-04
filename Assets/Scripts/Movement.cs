@@ -43,7 +43,7 @@ public class Movement : MonoBehaviour
         JumpVerifier();
         controller.Move(moveVel * speed * Time.deltaTime);
 
-        if (moveVel.magnitude >= 0.1 && controller.isGrounded)
+        if (moveVel.magnitude >= 0.2 && controller.isGrounded)
         {
             anim.SetBool("IsMoving", true);
         }
@@ -54,6 +54,15 @@ public class Movement : MonoBehaviour
 
         if (controller.isGrounded)
         {
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, -transform.up, out hit, 4, ~layer))
+            {
+                if (hit.transform.CompareTag("Plataform"))
+                {
+                    transform.parent = hit.transform;
+                }
+            }
+
             isGrounded = true;
             anim.SetBool("IsGrounded", isGrounded);
             isJumping = false;
@@ -68,6 +77,7 @@ public class Movement : MonoBehaviour
                 isGrounded = false;
                 anim.SetBool("IsGrounded", isGrounded);
                 anim.SetBool("IsFalling", true);
+                transform.parent = null;
             }
         }
     }
@@ -102,6 +112,7 @@ public class Movement : MonoBehaviour
     {
         if (isGrounded && !isJumping && Input.GetButtonDown("Jump"))
         {
+            transform.parent = null;
             fallVelocity = jumpForce;
             moveVel.y = fallVelocity;
             isJumping = true;
