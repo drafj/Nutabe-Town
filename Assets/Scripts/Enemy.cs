@@ -31,7 +31,7 @@ public class Enemy : Human
     {
         if (agent.enabled && !knocked)
         {
-            //anim.SetBool("Running", true);
+            anim.SetBool("IsMoving", true);
             agent.SetDestination(point);
         }
     }
@@ -53,6 +53,7 @@ public class Enemy : Human
                         patrol = false;
                         if (DistanceTo(playerPosition) <= attackRange)
                         {
+                            anim.SetTrigger("Attack");
                             agent.isStopped = true;
                             Vector3 targetPlayer = new Vector3(playerPosition.x, transform.position.y, playerPosition.z);
                             transform.LookAt(targetPlayer);
