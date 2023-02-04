@@ -49,7 +49,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Dissolve: 1
-    - _Noise_Escale: 50
+    - _Noise_Escale: 1000
     - _Noise_Strength: 5
     - _QueueControl: 0
     - _QueueOffset: 0
