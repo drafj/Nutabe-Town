@@ -44,7 +44,7 @@ Material:
     - _Opacity: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Wave: 4
+    - _Wave: 1
     - _watherSize: 30
     m_Colors:
     - _ColorBase: {r: 0.3137255, g: 0.6862745, b: 0.78431374, a: 0}
