@@ -1311,7 +1311,7 @@ MonoBehaviour:
   cam: {fileID: 0}
   target: {fileID: 2673592821044033233}
   speed: 6
-  jumpForce: 0
+  jumpForce: 2
   turnSmoothTime: 0.1
   turnSmoothVelocity: 0
 --- !u!114 &2673592820024983916
