@@ -25,7 +25,7 @@ public class Movement : MonoBehaviour
 
         if (direction.magnitude >= 0.1f && controller.enabled)
         {
-            GetComponent<PlayerController>().anim.SetBool("Running", true);
+            /*GetComponent<PlayerController>().anim.SetBool("Running", true);*/
             float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
             float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
@@ -34,7 +34,7 @@ public class Movement : MonoBehaviour
             moveDir.y = vSpeed;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
-        else
-            GetComponent<PlayerController>().anim.SetBool("Running", false);
+        /*else
+            GetComponent<PlayerController>().anim.SetBool("Running", false);*/
     }
 }
