@@ -11,7 +11,8 @@ public class Movement : MonoBehaviour
         jumpForce,
         turnSmoothTime,
         turnSmoothVelocity;
-    private float gravity = 250f;
+    private float gravity = 10f;
+    private float fallVelocity;
     private Vector3 moveVel;
     private Vector3 playerInput;
     private bool jumping;
@@ -85,9 +86,15 @@ public class Movement : MonoBehaviour
     {
         if (controller.isGrounded)
         {
-
+            fallVelocity = -gravity * Time.deltaTime;
+            moveVel.y = fallVelocity;
         }
-        moveVel.y = -gravity * Time.deltaTime;
+        else
+        {
+            fallVelocity -= gravity * Time.deltaTime;
+            moveVel.y = fallVelocity;
+        }
+        //moveVel.y = -gravity * Time.deltaTime;
     }
 
     void camDir()
@@ -106,7 +113,8 @@ public class Movement : MonoBehaviour
     {
         if (controller.isGrounded && Input.GetButtonDown("Jump"))
         {
-
+            fallVelocity = jumpForce;
+            moveVel.y = fallVelocity;
         }
     }
 }
