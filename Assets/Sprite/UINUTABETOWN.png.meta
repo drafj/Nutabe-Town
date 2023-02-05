@@ -1,0 +1,445 @@
+fileFormatVersion: 2
+guid: 7b2b3da54c23841438e74c9b7999bf6d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UINUTABETOWN_0
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 890
+        width: 209
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61245007c84682f4eb192991a402ed8a
+      internalID: -1379272818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UINUTABETOWN_5
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 745
+        width: 341
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47791c118ba0aa34fb9c8431dc686452
+      internalID: 313850554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UINUTABETOWN_12
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 808
+        width: 146
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2599657cce3f6fe4fa5ec5ded5546af3
+      internalID: 246291952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UINUTABETOWN_13
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 811
+        width: 129
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9d89a122af6cd4cb7692bc45409e08
+      internalID: 1859632598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UINUTABETOWN_14
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 806
+        width: 146
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ff9cf2b3cf9964b856788f84de5542
+      internalID: 1834005956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UINUTABETOWN_17
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 653
+        width: 146
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32710d31aadafe7439766cc5bc9ba044
+      internalID: -1133519463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UINUTABETOWN_18
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 651
+        width: 129
+        height: 133
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd23e0b3114fa7344a575f06bbee4511
+      internalID: -588580655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UINUTABETOWN_19
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 644
+        width: 150
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47adbf41b0f47914495cb96fd3929ad1
+      internalID: 387054454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UINUTABETOWN_21
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 601
+        width: 190
+        height: 95
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c4b7e045a5ce5418a666f8f5202465
+      internalID: 1650097497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UINUTABETOWN_62
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 30
+        width: 999
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c491969465995ef4680819dcd2b64ff1
+      internalID: 1964027545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UINUTABETOWN_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 144
+        width: 675
+        height: 422
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e30511efe0822c41963f93ea208e8da
+      internalID: 1386552597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 920b689448314c746b2347a7d16ffd22
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      UINUTABETOWN_22: -1892057779
+      UINUTABETOWN_28: -130994951
+      UINUTABETOWN_24: -1120172350
+      UINUTABETOWN_55: -954821477
+      UINUTABETOWN_9: 581696961
+      UINUTABETOWN_21: 1650097497
+      UINUTABETOWN_59: -1200308395
+      UINUTABETOWN_39: 284764133
+      UINUTABETOWN_3: -636575347
+      UINUTABETOWN_18: -588580655
+      UINUTABETOWN_33: 2015246930
+      UINUTABETOWN_46: 834804705
+      UINUTABETOWN_2: 1955412580
+      UINUTABETOWN_7: -430254320
+      UINUTABETOWN_5: 313850554
+      UINUTABETOWN_73: 1660169175
+      UINUTABETOWN_32: 1982536717
+      UINUTABETOWN_77: 1044049738
+      UINUTABETOWN_30: -1373667694
+      UINUTABETOWN_23: -199277347
+      UINUTABETOWN_16: -326642871
+      UINUTABETOWN_42: 205144788
+      UINUTABETOWN_74: -740041139
+      UINUTABETOWN_6: -1645461723
+      UINUTABETOWN_31: -1369479420
+      UINUTABETOWN_45: -1950553610
+      UINUTABETOWN_63: 794281514
+      UINUTABETOWN_4: 907652817
+      UINUTABETOWN_66: 1950206162
+      UINUTABETOWN_60: -623258419
+      UINUTABETOWN_75: 684332537
+      UINUTABETOWN_26: -2025112389
+      UINUTABETOWN_43: -765784740
+      UINUTABETOWN_40: -256106660
+      UINUTABETOWN_62: 1964027545
+      UINUTABETOWN_1: 1386552597
+      UINUTABETOWN_64: -953196286
+      UINUTABETOWN_70: 964654846
+      UINUTABETOWN_44: 2042672061
+      UINUTABETOWN_49: 1417422032
+      UINUTABETOWN_27: 1854763245
+      UINUTABETOWN_8: -1141670593
+      UINUTABETOWN_72: -286414044
+      UINUTABETOWN_52: 1163936978
+      UINUTABETOWN_51: -359185928
+      UINUTABETOWN_69: -192924180
+      UINUTABETOWN_14: 1834005956
+      UINUTABETOWN_34: 52632857
+      UINUTABETOWN_78: -882219522
+      UINUTABETOWN_20: 1700547062
+      UINUTABETOWN_17: -1133519463
+      UINUTABETOWN_67: 1041514856
+      UINUTABETOWN_15: -1941703104
+      UINUTABETOWN_37: 1743143018
+      UINUTABETOWN_12: 246291952
+      UINUTABETOWN_57: 130742373
+      UINUTABETOWN_65: -456218874
+      UINUTABETOWN_13: 1859632598
+      UINUTABETOWN_25: 1709623031
+      UINUTABETOWN_29: -2015427735
+      UINUTABETOWN_68: 1701105473
+      UINUTABETOWN_76: -570990853
+      UINUTABETOWN_11: -278323920
+      UINUTABETOWN_19: 387054454
+      UINUTABETOWN_47: 1835382245
+      UINUTABETOWN_0: -1379272818
+      UINUTABETOWN_35: -1872946271
+      UINUTABETOWN_38: -709423529
+      UINUTABETOWN_36: -1928725693
+      UINUTABETOWN_54: -793734799
+      UINUTABETOWN_71: 1255674978
+      UINUTABETOWN_56: 1794159446
+      UINUTABETOWN_50: 758466432
+      UINUTABETOWN_58: 644793990
+      UINUTABETOWN_10: -1874454156
+      UINUTABETOWN_61: 1236657462
+      UINUTABETOWN_41: 186022485
+      UINUTABETOWN_53: -1392158810
+      UINUTABETOWN_48: 6984320
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
