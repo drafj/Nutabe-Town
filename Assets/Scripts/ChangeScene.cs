@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
+    public GameObject portal;
     public void LoadScene(string scene)
     {
         SceneManager.LoadScene(scene);
@@ -12,9 +13,14 @@ public class ChangeScene : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Ropa")
+        if (other.tag == "Portal")
         {
             SceneManager.LoadScene("Level1");
+        }
+
+        if (other.tag == "Ropa")
+        {
+            portal.SetActive(true);
         }
     }
 }
