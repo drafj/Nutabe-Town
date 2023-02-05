@@ -9,4 +9,12 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene(scene);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Ropa")
+        {
+            SceneManager.LoadScene("Level1");
+        }
+    }
 }
