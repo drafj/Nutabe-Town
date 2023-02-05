@@ -6,6 +6,7 @@ using Cinemachine;
 
 public class PlayerController : Human
 {
+    public bool gotMaletin = false;
     public int
         potions,
         swords,

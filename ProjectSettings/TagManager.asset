@@ -10,6 +10,8 @@ TagManager:
   - Axe
   - cuerda
   - Enemy
+  - maletin
+  - FarPoint
   layers:
   - Default
   - TransparentFX

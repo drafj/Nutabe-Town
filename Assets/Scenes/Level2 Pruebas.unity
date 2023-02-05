@@ -554,6 +554,11 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 3.1
       objectReference: {fileID: 0}
+    - target: {fileID: 2673592820024983916, guid: 413a33d5affe80c40b24802c63d53fe6,
+        type: 3}
+      propertyPath: gotMaletin
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3016263107565780023, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
       propertyPath: m_Name
@@ -760,6 +765,7 @@ MonoBehaviour:
   potions: []
   swords: []
   powerUp: {fileID: 0}
+  coins: []
 --- !u!4 &724373830
 Transform:
   m_ObjectHideFlags: 0
@@ -1085,7 +1091,6 @@ MonoBehaviour:
   axe: {fileID: 906570066}
   cuerda: {fileID: 1404046117}
   rbTrap: {fileID: 1566060257}
-  changeScene: {fileID: 0}
 --- !u!4 &993755003 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2490556548949124749, guid: 413a33d5affe80c40b24802c63d53fe6,
@@ -1107,6 +1112,18 @@ MonoBehaviour:
   esferaPrueba: {fileID: 4717598839058233575, guid: 5f43337491f2c00478a71635ebaa1831,
     type: 3}
   creador: {fileID: 993755003}
+--- !u!114 &993755006 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2673592820024983916, guid: 413a33d5affe80c40b24802c63d53fe6,
+    type: 3}
+  m_PrefabInstance: {fileID: 346499512}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993754988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58831f2dddb138943876632a435bfcfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1021815653
 GameObject:
   m_ObjectHideFlags: 0
@@ -1431,6 +1448,14 @@ PrefabInstance:
       propertyPath: agent
       value: 
       objectReference: {fileID: 55270344}
+    - target: {fileID: 388751847, guid: ebe4bbbe71924a343be28bbb8b699a8e, type: 3}
+      propertyPath: distantPoint
+      value: 
+      objectReference: {fileID: 2023407919}
+    - target: {fileID: 388751847, guid: ebe4bbbe71924a343be28bbb8b699a8e, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 993755006}
     - target: {fileID: 388751847, guid: ebe4bbbe71924a343be28bbb8b699a8e, type: 3}
       propertyPath: patrolPoints.Array.data[0]
       value: 
@@ -2030,6 +2055,68 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2023407919
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2023407920}
+  - component: {fileID: 2023407921}
+  - component: {fileID: 2023407922}
+  m_Layer: 0
+  m_Name: FarPoint
+  m_TagString: FarPoint
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2023407920
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023407919}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 33.6648, y: 0.458, z: 49.328}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2023407921
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023407919}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2, y: 0.2, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &2023407922
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023407919}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1001 &2041590805
 PrefabInstance:
   m_ObjectHideFlags: 0
