@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class InstanciarMoneda : MonoBehaviour
@@ -7,6 +8,7 @@ public class InstanciarMoneda : MonoBehaviour
     public GameObject esferaPrueba;
     public Transform creador;
     public int amountOfCoins;
+    public bool canTakeCoins;
 
     void Start()
     {
@@ -15,7 +17,7 @@ public class InstanciarMoneda : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("e") && amountOfCoins > 0)
+        if (Input.GetKeyDown("e") && amountOfCoins > 0 && canTakeCoins)
         {
             CrearMoneda();
             amountOfCoins--;
@@ -24,12 +26,18 @@ public class InstanciarMoneda : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if ()
-            if (Input.GetKeyDown("e") && amountOfCoins > 0)
-            {
-                CrearMoneda();
-                amountOfCoins--;
-            }
+        if (other.CompareTag("Coineable"))
+        {
+            canTakeCoins = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Coineable"))
+        {
+            canTakeCoins = false;
+        }
     }
 
     void CrearMoneda()

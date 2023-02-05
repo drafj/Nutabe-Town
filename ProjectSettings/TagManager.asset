@@ -19,6 +19,7 @@ TagManager:
   - Portal
   - Portal2
   - ocarina
+  - Coineable
   layers:
   - Default
   - TransparentFX
