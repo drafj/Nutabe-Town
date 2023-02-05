@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{0b2d0567-b1a9-412b-81a9-2c4b425cb50a}">
+		<property name="name">
+			<value>Golpe</value>
+		</property>
+		<relationship name="folder">
+			<destination>{f618be65-3442-48d8-a2f2-00c2679ad78b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{3964e2c9-0a44-411a-8c06-6cf95184b52d}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{3964e2c9-0a44-411a-8c06-6cf95184b52d}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

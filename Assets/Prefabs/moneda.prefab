@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5600559254167594405}
   - component: {fileID: 6142338190078506804}
   - component: {fileID: 8438354329348673716}
+  - component: {fileID: -6355312863626110612}
   m_Layer: 0
   m_Name: moneda
   m_TagString: Untagged
@@ -98,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07874e0cfe2c3d40909e06fac33d3e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerCoin: 0
 --- !u!65 &6142338190078506804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -127,3 +129,33 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &-6355312863626110612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4717598839058233575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -201059677
+      Data2: 1156195407
+      Data3: -641556310
+      Data4: 1469116236
+    Path: event:/Prop/16 Prop Suelta Moneda
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 1
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20

@@ -1,0 +1,983 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8974332080981573272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prop/18 Prop Entrega billetes
+  m_EditorClassIdentifier: 
+  Path: event:/Prop/18 Prop Entrega billetes
+  Guid:
+    Data1: -415617329
+    Data2: 1264334710
+    Data3: -840030280
+    Data4: -724245250
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4242
+--- !u!114 &-8444896081846452208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prop/22 Prop Trampa de barrotes de madera
+  m_EditorClassIdentifier: 
+  Path: event:/Prop/22 Prop Trampa de barrotes de madera
+  Guid:
+    Data1: 1304735969
+    Data2: 1144197491
+    Data3: -1370655079
+    Data4: -1387714717
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3413
+--- !u!114 &-7645757239806195874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pasos amigo
+  m_EditorClassIdentifier: 
+  Path: event:/Pasos amigo
+  Guid:
+    Data1: 1851121956
+    Data2: 1330379007
+    Data3: 2118509205
+    Data4: 476748006
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 766
+--- !u!114 &-7045612053957448182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/wakan/08 Wakan Ca\xEDda"
+  m_EditorClassIdentifier: 
+  Path: "event:/wakan/08 Wakan Ca\xEDda"
+  Guid:
+    Data1: -620941490
+    Data2: 1128666295
+    Data3: 1537725
+    Data4: -1925174488
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1804
+--- !u!114 &-6810629731486158687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prop/15 Prop Coge moneda
+  m_EditorClassIdentifier: 
+  Path: event:/Prop/15 Prop Coge moneda
+  Guid:
+    Data1: -1655117368
+    Data2: 1231093538
+    Data3: 1461693362
+    Data4: -1117057534
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1156
+--- !u!114 &-6071806837531140678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AX
+  m_EditorClassIdentifier: 
+  Path: event:/AX
+  Guid:
+    Data1: 153371145
+    Data2: 1136524566
+    Data3: -300310627
+    Data4: 1663857501
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 92871
+--- !u!114 &-6021353510308577680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/cura/Cura_Rezando
+  m_EditorClassIdentifier: 
+  Path: event:/cura/Cura_Rezando
+  Guid:
+    Data1: 200747668
+    Data2: 1168556549
+    Data3: 2113398946
+    Data4: 954008394
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 13625
+--- !u!114 &-5404580783418533371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/vigilante/hit
+  m_EditorClassIdentifier: 
+  Path: event:/vigilante/hit
+  Guid:
+    Data1: -1026793131
+    Data2: 1086282107
+    Data3: -1401944934
+    Data4: 16390269
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -1425228568822680187}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5875
+--- !u!114 &-4956899101213978712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Mx
+  m_EditorClassIdentifier: 
+  Path: event:/Mx
+  Guid:
+    Data1: -1524062512
+    Data2: 1171369488
+    Data3: 1589156006
+    Data4: 1230763661
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 89072
+--- !u!114 &-4813520509803940938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: "parameter:/05 Vigilante Golpe Pu\xF1o/Golpe"
+  m_EditorClassIdentifier: 
+  Name: Golpe
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 201644885
+    data2: 4102739662
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-3829694391238061550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/NutabeTownFmod/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638112074865234819
+  FileSizes:
+  - Name: Desktop
+    Value: 2448
+  Exists: 1
+--- !u!114 &-3339688384403967917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prop/13 Prop Coge llave
+  m_EditorClassIdentifier: 
+  Path: event:/Prop/13 Prop Coge llave
+  Guid:
+    Data1: -1666693079
+    Data2: 1148286096
+    Data3: -46507352
+    Data4: -246097259
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 406
+--- !u!114 &-2826264518142602280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Portal/01 Paso portal pasado
+  m_EditorClassIdentifier: 
+  Path: event:/Portal/01 Paso portal pasado
+  Guid:
+    Data1: 282103929
+    Data2: 1318580292
+    Data3: -1817290112
+    Data4: -1339174201
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1754
+--- !u!114 &-2760847671728690647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Amigo_voz
+  m_EditorClassIdentifier: 
+  Path: event:/Amigo_voz
+  Guid:
+    Data1: -674569084
+    Data2: 1233009377
+    Data3: 1442422704
+    Data4: 958683828
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 843
+--- !u!114 &-1425228568822680187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/hit/Golpe
+  m_EditorClassIdentifier: 
+  Name: Golpe
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 201644885
+    data2: 4102739662
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-347681248586298559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/wakan/06 Wakan Pasos descalzo en tierra
+  m_EditorClassIdentifier: 
+  Path: event:/wakan/06 Wakan Pasos descalzo en tierra
+  Guid:
+    Data1: 2142539210
+    Data2: 1137707259
+    Data3: 127745961
+    Data4: 1566623081
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 766
+--- !u!114 &-255997229489170236
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/wakan/07 Wakan Salto
+  m_EditorClassIdentifier: 
+  Path: event:/wakan/07 Wakan Salto
+  Guid:
+    Data1: 1951777070
+    Data2: 1166777580
+    Data3: 543522982
+    Data4: 903634226
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1065
+--- !u!114 &-59598890624283590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prop/20 Prop Coge hacha
+  m_EditorClassIdentifier: 
+  Path: event:/Prop/20 Prop Coge hacha
+  Guid:
+    Data1: 1860806911
+    Data2: 1160210539
+    Data3: -1126618746
+    Data4: -1953147132
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1693
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -3829694391238061550}
+  - {fileID: 8882422088755429368}
+  EditorEvents:
+  - {fileID: 4811480168178899947}
+  - {fileID: 1641085348234778944}
+  - {fileID: 7894637121447742430}
+  - {fileID: 2902061206558121963}
+  - {fileID: -7645757239806195874}
+  - {fileID: -3339688384403967917}
+  - {fileID: -255997229489170236}
+  - {fileID: -7045612053957448182}
+  - {fileID: 4105294265415797679}
+  - {fileID: -2826264518142602280}
+  - {fileID: 6540702176941567617}
+  - {fileID: -6021353510308577680}
+  - {fileID: 4034027022179609978}
+  - {fileID: 6817237636444466547}
+  - {fileID: 4764462490872253030}
+  - {fileID: 2938019121030205840}
+  - {fileID: 864919574882138975}
+  - {fileID: 9197025371329397920}
+  - {fileID: 9085538186651147695}
+  - {fileID: 440737762770331436}
+  - {fileID: -6810629731486158687}
+  - {fileID: -347681248586298559}
+  - {fileID: -8974332080981573272}
+  - {fileID: -8444896081846452208}
+  - {fileID: 2402113625975313378}
+  - {fileID: 3705805870928654380}
+  - {fileID: -59598890624283590}
+  - {fileID: -6071806837531140678}
+  - {fileID: -5404580783418533371}
+  - {fileID: -2760847671728690647}
+  - {fileID: -4956899101213978712}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 8882422088755429368}
+  StringsBanks:
+  - {fileID: -3829694391238061550}
+  cacheTime: 638112074865234819
+  cacheVersion: 131601
+--- !u!114 &440737762770331436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prop/17 Prop Coge billetes del portafolio
+  m_EditorClassIdentifier: 
+  Path: event:/Prop/17 Prop Coge billetes del portafolio
+  Guid:
+    Data1: -959974713
+    Data2: 1303938586
+    Data3: -491795568
+    Data4: 574727775
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2773
+--- !u!114 &864919574882138975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/wakan/09 Wakan recibe da\xF1o"
+  m_EditorClassIdentifier: 
+  Path: "event:/wakan/09 Wakan recibe da\xF1o"
+  Guid:
+    Data1: 913798830
+    Data2: 1137357938
+    Data3: -1568662635
+    Data4: 1026719781
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 613
+--- !u!114 &1641085348234778944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/cura/Cura_ataque
+  m_EditorClassIdentifier: 
+  Path: event:/cura/Cura_ataque
+  Guid:
+    Data1: -718681585
+    Data2: 1107440428
+    Data3: -1551470921
+    Data4: -121803033
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
+--- !u!114 &2402113625975313378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/vigilante/05 Vigilante Golpe Pu\xF1o"
+  m_EditorClassIdentifier: 
+  Path: "event:/vigilante/05 Vigilante Golpe Pu\xF1o"
+  Guid:
+    Data1: -1985218568
+    Data2: 1301035071
+    Data3: -2059620167
+    Data4: -1855660553
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -4813520509803940938}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 699
+--- !u!114 &2902061206558121963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Portal/02 Paso portal presente
+  m_EditorClassIdentifier: 
+  Path: event:/Portal/02 Paso portal presente
+  Guid:
+    Data1: -757768422
+    Data2: 1297369294
+    Data3: -392340333
+    Data4: 1719502424
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2038
+--- !u!114 &2938019121030205840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Portal/Portal prendido Loop
+  m_EditorClassIdentifier: 
+  Path: event:/Portal/Portal prendido Loop
+  Guid:
+    Data1: -586210643
+    Data2: 1265600024
+    Data3: 1323890614
+    Data4: -656220800
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 47233
+--- !u!114 &3705805870928654380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/narracion/Narracion_Intro
+  m_EditorClassIdentifier: 
+  Path: event:/narracion/Narracion_Intro
+  Guid:
+    Data1: -1286607111
+    Data2: 1184236666
+    Data3: 2112375996
+    Data4: 1413012230
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 76974
+--- !u!114 &4034027022179609978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/vigilante/vigilante_caida
+  m_EditorClassIdentifier: 
+  Path: event:/vigilante/vigilante_caida
+  Guid:
+    Data1: 932897437
+    Data2: 1137872914
+    Data3: 945804427
+    Data4: -1199320980
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 964
+--- !u!114 &4105294265415797679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/narracion/Narracion_Pasado
+  m_EditorClassIdentifier: 
+  Path: event:/narracion/Narracion_Pasado
+  Guid:
+    Data1: 59508838
+    Data2: 1255009494
+    Data3: 1577949613
+    Data4: 46473447
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 55746
+--- !u!114 &4764462490872253030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prop/16 Prop Suelta Moneda
+  m_EditorClassIdentifier: 
+  Path: event:/Prop/16 Prop Suelta Moneda
+  Guid:
+    Data1: -201059677
+    Data2: 1156195407
+    Data3: -641556310
+    Data4: 1469116236
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1727
+--- !u!114 &4811480168178899947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PasosEnemigos
+  m_EditorClassIdentifier: 
+  Path: event:/PasosEnemigos
+  Guid:
+    Data1: 1296648962
+    Data2: 1145537043
+    Data3: -1316301924
+    Data4: 177179087
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1164
+--- !u!114 &6540702176941567617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prop/21 Prop corta cuerda hacha
+  m_EditorClassIdentifier: 
+  Path: event:/Prop/21 Prop corta cuerda hacha
+  Guid:
+    Data1: 508258688
+    Data2: 1113587814
+    Data3: 1277515942
+    Data4: -542896415
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3945
+--- !u!114 &6817237636444466547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prop/19 Prop Cae al agua
+  m_EditorClassIdentifier: 
+  Path: event:/Prop/19 Prop Cae al agua
+  Guid:
+    Data1: -1840680288
+    Data2: 1306149892
+    Data3: 1233276571
+    Data4: 570969659
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3750
+--- !u!114 &7894637121447742430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prop/14 Prop Usa llave abre
+  m_EditorClassIdentifier: 
+  Path: event:/Prop/14 Prop Usa llave abre
+  Guid:
+    Data1: 1816400658
+    Data2: 1310320284
+    Data3: -2023554669
+    Data4: 77163413
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1880
+--- !u!114 &8882422088755429368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/NutabeTownFmod/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638112074865184812
+  FileSizes:
+  - Name: Desktop
+    Value: 10724160
+  Exists: 1
+--- !u!114 &9085538186651147695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/vigilante/03 Vigilante Alerta
+  m_EditorClassIdentifier: 
+  Path: event:/vigilante/03 Vigilante Alerta
+  Guid:
+    Data1: 25175233
+    Data2: 1151852233
+    Data3: 1033955970
+    Data4: -1590254515
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4590
+--- !u!114 &9197025371329397920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/narracion/Narracion_Actualida
+  m_EditorClassIdentifier: 
+  Path: event:/narracion/Narracion_Actualida
+  Guid:
+    Data1: 1819525568
+    Data2: 1304984718
+    Data3: 99892611
+    Data4: 935134399
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 42554

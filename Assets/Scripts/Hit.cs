@@ -8,6 +8,7 @@ public class Hit : MonoBehaviour
 {
     public Fade fade;
     public CinemachineFreeLook freeLook;
+    public FMODUnity.StudioEventEmitter emitter;
     private void OnTriggerStay(Collider other)
     {
         if (other.TryGetComponent(out PlayerController playerController))
@@ -16,6 +17,7 @@ public class Hit : MonoBehaviour
             fade.Lose();
             playerController.GetComponent<Movement>().enabled = false;
             freeLook.enabled = false;
+            emitter.Play();
         }
     }
 
