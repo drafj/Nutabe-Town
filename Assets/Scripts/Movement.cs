@@ -110,7 +110,7 @@ public class Movement : MonoBehaviour
 
     void JumpVerifier()
     {
-        if (isGrounded && !isJumping && Input.GetKeyDown(KeyCode.Space) || isGrounded && !isJumping && Input.GetKeyDown(KeyCode.Joystick1Button4))
+        if (isGrounded && !isJumping && Input.GetKeyDown(KeyCode.Space) || isGrounded && !isJumping && Input.GetKeyDown(KeyCode.Joystick1Button1))
         {
             transform.parent = null;
             fallVelocity = jumpForce;
