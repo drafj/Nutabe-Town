@@ -15,6 +15,7 @@ TagManager:
   - Trampa
   - Key
   - Door
+  - Ropa
   layers:
   - Default
   - TransparentFX
