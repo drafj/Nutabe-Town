@@ -1736,12 +1736,12 @@ PrefabInstance:
     - target: {fileID: 658562508896185740, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.27178112
+      value: -0.27178115
       objectReference: {fileID: 0}
     - target: {fileID: 658562508896185740, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.06702977
+      value: -0.06702976
       objectReference: {fileID: 0}
     - target: {fileID: 658562508896185740, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
@@ -1751,7 +1751,7 @@ PrefabInstance:
     - target: {fileID: 658562508896185740, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.22988321
+      value: -0.2298832
       objectReference: {fileID: 0}
     - target: {fileID: 1755161717870834071, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
@@ -1867,6 +1867,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wakan01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993929508775496330, guid: 413a33d5affe80c40b24802c63d53fe6,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.029735878
+      objectReference: {fileID: 0}
+    - target: {fileID: 3993929508775496330, guid: 413a33d5affe80c40b24802c63d53fe6,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.09736724
       objectReference: {fileID: 0}
     - target: {fileID: 5673427608841833944, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
@@ -4494,6 +4504,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58831f2dddb138943876632a435bfcfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &993755011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993754988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5763f49c4d72c843ac5dbdd0718d29a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  key: {fileID: 0}
+  door: {fileID: 0}
+  getKey: 0
 --- !u!1 &1016544220
 GameObject:
   m_ObjectHideFlags: 0
