@@ -17,6 +17,7 @@ TagManager:
   - Door
   - Ropa
   - Portal
+  - Portal2
   layers:
   - Default
   - TransparentFX

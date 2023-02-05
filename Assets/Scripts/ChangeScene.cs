@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class ChangeScene : MonoBehaviour
 {
+    public GameObject artilugio;
     public GameObject portal;
     public void LoadScene(string scene)
     {
@@ -15,11 +16,15 @@ public class ChangeScene : MonoBehaviour
     {
         if (other.tag == "Portal")
         {
-            SceneManager.LoadScene("Level1");
+            SceneManager.LoadScene("Level2");
         }
-
+        if (other.tag == "Portal2")
+        {
+            SceneManager.LoadScene(0);
+        }
         if (other.tag == "Ropa")
         {
+            Destroy(artilugio);
             portal.SetActive(true);
         }
     }
