@@ -57,6 +57,7 @@ public class Enemy : Human
                     }
                     else if (DistanceTo(playerPosition) <= sightRange && !bribed)
                     {
+                        FMODUnity.RuntimeManager.PlayOneShot("event:/vigilante/03 Vigilante Alerta");
                         MoveToPoint(playerPosition);
                         if (DistanceTo(playerPosition) <= attackRange)
                         {

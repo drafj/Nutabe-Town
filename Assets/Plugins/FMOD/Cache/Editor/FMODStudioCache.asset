@@ -135,6 +135,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1156
+--- !u!114 &-6071806837531140678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/AX
+  m_EditorClassIdentifier: 
+  Path: event:/AX
+  Guid:
+    Data1: 153371145
+    Data2: 1136524566
+    Data3: -300310627
+    Data4: 1663857501
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 92871
 --- !u!114 &-6021353510308577680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,6 +189,61 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 13625
+--- !u!114 &-5404580783418533371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/vigilante/hit
+  m_EditorClassIdentifier: 
+  Path: event:/vigilante/hit
+  Guid:
+    Data1: -1026793131
+    Data2: 1086282107
+    Data3: -1401944934
+    Data4: 16390269
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -1425228568822680187}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5875
+--- !u!114 &-4956899101213978712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Mx
+  m_EditorClassIdentifier: 
+  Path: event:/Mx
+  Guid:
+    Data1: -1524062512
+    Data2: 1171369488
+    Data3: 1589156006
+    Data4: 1230763661
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 89072
 --- !u!114 &-4813520509803940938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,10 +283,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/NutabeTownFmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638111565724991288
+  lastModified: 638111994403651018
   FileSizes:
   - Name: Desktop
-    Value: 2298
+    Value: 2448
   Exists: 1
 --- !u!114 &-3339688384403967917
 MonoBehaviour:
@@ -260,6 +342,57 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1754
+--- !u!114 &-2760847671728690647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Amigo_voz
+  m_EditorClassIdentifier: 
+  Path: event:/Amigo_voz
+  Guid:
+    Data1: -674569084
+    Data2: 1233009377
+    Data3: 1442422704
+    Data4: 958683828
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 843
+--- !u!114 &-1425228568822680187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/hit/Golpe
+  m_EditorClassIdentifier: 
+  Name: Golpe
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 201644885
+    data2: 4102739662
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-347681248586298559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -384,12 +517,16 @@ MonoBehaviour:
   - {fileID: 2402113625975313378}
   - {fileID: 3705805870928654380}
   - {fileID: -59598890624283590}
+  - {fileID: -6071806837531140678}
+  - {fileID: -5404580783418533371}
+  - {fileID: -2760847671728690647}
+  - {fileID: -4956899101213978712}
   EditorParameters: []
   MasterBanks:
   - {fileID: 8882422088755429368}
   StringsBanks:
   - {fileID: -3829694391238061550}
-  cacheTime: 638111565724991288
+  cacheTime: 638111994403651018
   cacheVersion: 131601
 --- !u!114 &440737762770331436
 MonoBehaviour:
@@ -499,7 +636,7 @@ MonoBehaviour:
   - {fileID: -4813520509803940938}
   MinDistance: 1
   MaxDistance: 20
-  Length: 5875
+  Length: 699
 --- !u!114 &2902061206558121963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -785,10 +922,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/NutabeTownFmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638111565724951282
+  lastModified: 638111994403611014
   FileSizes:
   - Name: Desktop
-    Value: 4531168
+    Value: 10722976
   Exists: 1
 --- !u!114 &9085538186651147695
 MonoBehaviour:

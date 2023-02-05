@@ -16,6 +16,7 @@ public class Hit : MonoBehaviour
             fade.Lose();
             playerController.GetComponent<Movement>().enabled = false;
             freeLook.enabled = false;
+            FMODUnity.RuntimeManager.PlayOneShot("event:/vigilante/hit");
         }
     }
 
