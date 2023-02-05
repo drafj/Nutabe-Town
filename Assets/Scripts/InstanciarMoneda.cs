@@ -22,6 +22,16 @@ public class InstanciarMoneda : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if ()
+            if (Input.GetKeyDown("e") && amountOfCoins > 0)
+            {
+                CrearMoneda();
+                amountOfCoins--;
+            }
+    }
+
     void CrearMoneda()
     {
         GameObject esferaCreada = Instantiate(esferaPrueba, creador);
