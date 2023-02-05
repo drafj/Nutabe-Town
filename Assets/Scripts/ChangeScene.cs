@@ -29,7 +29,11 @@ public class ChangeScene : MonoBehaviour
     
         if (other.tag == "Portal2")
         {
-            SceneManager.LoadScene(0);
+            fade.FadeOut();
+            playerController.anim.SetBool("IsMoving", false);
+            playerController.enabled = false;
+            freeLook.enabled = false;
+            Invoke("WaitFade2", 3f);
         }
         if (other.tag == "Ropa")
         {
@@ -41,5 +45,10 @@ public class ChangeScene : MonoBehaviour
     void WaitFade()
     {
         SceneManager.LoadScene("Level02");
+    }
+
+    void WaitFade2()
+    {
+        SceneManager.LoadScene(3);
     }
 }
