@@ -7,6 +7,8 @@ using UnityEngine.AI;
 [RequireComponent(typeof(NavMeshAgent))]
 public class Enemy : Human
 {
+    public PlayerController playerController;
+    public GameObject distantPoint;
     public float 
         sightRange,
         attackRange;
@@ -15,7 +17,7 @@ public class Enemy : Human
     public Transform hand;
     public LayerMask layer;
     public bool knocked;
-    private bool patrol;
+    private bool bribed;
     private int patrolIndex = 0;
     private Vector3 actualPatrolPoint;
     private Vector3 playerPosition;
@@ -30,7 +32,7 @@ public class Enemy : Human
 
     public void MoveToPoint(Vector3 point)
     {
-        if (agent.enabled && !knocked)
+        if (agent.enabled)
         {
             anim.SetBool("IsMoving", true);
             agent.SetDestination(point);
@@ -46,17 +48,26 @@ public class Enemy : Human
             {
                 MoveToPoint(GameManager.instance.coins[0].transform.position);
             }
-            else if (DistanceTo(playerPosition) <= sightRange)
+            else if (DistanceTo(playerPosition) <= sightRange && !bribed)
             {
                 MoveToPoint(playerPosition);
                 if (DistanceTo(playerPosition) <= attackRange)
                 {
-                    anim.SetTrigger("Attack");
-                    agent.isStopped = true;
-                    Vector3 targetPlayer = new Vector3(playerPosition.x, transform.position.y, playerPosition.z);
-                    transform.LookAt(targetPlayer);
-                    StartCoroutine(Attack(hand));
-                    yield return new WaitForSeconds(2f);
+                    if (playerController.gotMaletin == true)
+                    {
+                        playerController.gotMaletin = false;
+                        StartCoroutine(BeingBribed());
+                        MoveToPoint(distantPoint.transform.position);
+                    }
+                    else
+                    {
+                        anim.SetTrigger("Attack");
+                        agent.isStopped = true;
+                        Vector3 targetPlayer = new Vector3(playerPosition.x, transform.position.y, playerPosition.z);
+                        transform.LookAt(targetPlayer);
+                        StartCoroutine(Attack(hand));
+                        yield return new WaitForSeconds(2f);
+                    }
                 }
 
                 else
@@ -65,7 +76,7 @@ public class Enemy : Human
                     agent.isStopped = false;
                 }
             }
-            else
+            else if (!bribed)
             {
                 if (patrolPoints.Count <= 0)
                     yield return null;
@@ -87,16 +98,21 @@ public class Enemy : Human
         }
     }
 
-    public void EnebleNormalBehaviour()
+    IEnumerator BeingBribed()
     {
-        if (life > 0)
-        {
-            knocked = false;
-        }
+        bribed = true;
+        yield return new WaitForSeconds(15f);
+        bribed = false;
     }
 
     private void OnTriggerEnter(Collider other)
     {
+            print("colisiona");
+        if (other.CompareTag("FarPoint"))
+        {
+            print("entra");
+            anim.SetBool("IsMoving", false);
+        }
         /*if (other.gameObject.GetComponent<Attack>() != null)
         {
             Invoke("EnebleNormalBehaviour", 2f);
