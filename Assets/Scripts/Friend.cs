@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.AI;
 using UnityEngine;
 using Unity.VisualScripting;
+using System.Data.Common;
 
 public class Friend : MonoBehaviour
 {
@@ -13,10 +14,10 @@ public class Friend : MonoBehaviour
     sightRange,
     attackRange;
     public List<GameObject> patrolPoints = new List<GameObject>();
+    public bool runAway = false;
     private int patrolIndex = 0;
     private Vector3 actualPatrolPoint;
     private Vector3 enemyPosition;
-    private bool runAway = false;
     private float
     enemyDistance,
     temporalDistance;
@@ -24,6 +25,7 @@ public class Friend : MonoBehaviour
 
     private void Start()
     {
+        anim.SetBool("IsMoving", false);
         StartCoroutine(FriendBehaviour());
     }
 
@@ -38,15 +40,15 @@ public class Friend : MonoBehaviour
                 MoveToPoint(enemyPosition);
                 if (DistanceTo(enemyPosition) <= attackRange && !runAway)
                 {
-                    anim.SetTrigger("Attack");
+                    Debug.Log("llama al ataque");
                     agent.isStopped = true;
                     Vector3 targetPlayer = new Vector3(enemyPosition.x, transform.position.y, enemyPosition.z);
                     transform.LookAt(targetPlayer);
                     StartCoroutine(Attack(hand));
-                    yield return new WaitForSeconds(2f);
+                    yield return new WaitForSeconds(0.7f);
                 }
             }
-            else
+            else if (runAway)
             {
                 if (patrolPoints.Count <= 0)
                 yield return null;
@@ -75,9 +77,10 @@ public class Friend : MonoBehaviour
 
         yield return new WaitForSeconds(t);
         anim.SetBool("IsMoving", false);
-        anim.SetTrigger("Attack");
+        anim.SetBool("Attack", true);
         hand.gameObject.SetActive(true);
         yield return new WaitForSeconds(t);
+        anim.SetBool("Attack", false);
         hand.gameObject.SetActive(false);
     }
 
@@ -103,6 +106,7 @@ public class Friend : MonoBehaviour
     {
         if (agent.enabled)
         {
+            anim.SetBool("Attack", false);
             anim.SetBool("IsMoving", true);
             agent.SetDestination(point);
         }
