@@ -17,14 +17,11 @@ public class PlayerController : Human
         remainingEnemies;
     public GameObject swordPrefab;
     public Transform hand;
-    private bool 
-        attackColdown,
-        powerUp;
+    private bool attackColdown;
     private float 
         enemyDistance,
         temporalDistance;
     private int isMovementDisabled;
-    private GameObject enemyCloser;
     private CharacterController controller;
     private Movement movement;
 
@@ -112,44 +109,7 @@ public class PlayerController : Human
         }
     }
 
-    public void ThrowSword()
-    {
-        StartCoroutine(ThrowSwordCo());
-    }
-
-    public void UsePowerUp()
-    {
-        int newCount = 0;
-        newCount = int.Parse(manager.powerUp.text);
-        if (newCount > 0)
-        {
-            powerUp = true;
-            newCount--;
-            manager.powerUp.text = newCount.ToString();
-        }
-    }
-
-    public IEnumerator ThrowSwordCo()
-    {
-        if (swords > 0 && !attackColdown && movement.enabled)
-        {
-            attackColdown = true;
-            movement.enabled = false;
-            anim.SetBool("Running", false);
-            anim.SetTrigger("Attacking");
-            swords--;
-            UpdateUIItem(manager.swords, swords);
-            StartCoroutine(EnableMovement(true, 1.5f));
-            yield return new WaitForSeconds(0.45f);
-            hand.gameObject.SetActive(false);
-            Quaternion swordRotation = Quaternion.Euler(90f, transform.eulerAngles.y, transform.eulerAngles.z);
-            Instantiate(swordPrefab, hand.position, swordRotation);
-            yield return new WaitForSeconds(0.3f);
-            hand.gameObject.SetActive(true);
-        }
-    }
-
-    public void ClosestEnemy()
+    /*public void ClosestEnemy()
     {
         enemyCloser = null;
         enemyDistance = 550;
@@ -165,17 +125,17 @@ public class PlayerController : Human
                 enemyCloser = enemy.gameObject;
             }
         }
-    }
+    }*/
 
-    public void UpdateEnemyHealthBar()
+    /*public void UpdateEnemyHealthBar()
     {
         ClosestEnemy();
         //manager.EnemyHealthBar.SetHealth(enemyCloser.GetComponent<Human>().life);
         /*if (DistanceTo(enemyCloser.transform.position) <= 8 && enemyCloser.GetComponent<Human>().life > 0)
             manager.EnemyHealthBar.gameObject.SetActive(true);
         else
-            manager.EnemyHealthBar.gameObject.SetActive(false);*/
-    }
+            manager.EnemyHealthBar.gameObject.SetActive(false);
+    }*/
 
     public void UpdateUIItem(List<TextMeshProUGUI> items, int actualCount)
     {

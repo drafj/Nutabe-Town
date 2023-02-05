@@ -6,7 +6,7 @@ public class InstanciarMoneda : MonoBehaviour
 {
     public GameObject esferaPrueba;
     public Transform creador;
-    private int amountOfCoins = 10;
+    public int amountOfCoins;
 
     void Start()
     {
