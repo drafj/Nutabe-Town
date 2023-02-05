@@ -9,7 +9,8 @@ public class PlayerController : Human
 {
     public GameObject maletin;
     public bool gotMaletin = false;
-    
+    public bool ocarina = false;
+    public bool ocarinaCC = false;
     
     public int
         potions,
@@ -17,10 +18,6 @@ public class PlayerController : Human
         remainingEnemies;
     public GameObject swordPrefab;
     public Transform hand;
-    private bool attackColdown;
-    private float 
-        enemyDistance,
-        temporalDistance;
     private int isMovementDisabled;
     private CharacterController controller;
     private Movement movement;
@@ -46,97 +43,6 @@ public class PlayerController : Human
         }
     }
 
-    public IEnumerator EnableMovement(bool justMove, float delay)
-    {
-        isMovementDisabled++;
-        yield return new WaitForSeconds(delay);
-        if (isMovementDisabled == 1)
-        {
-            if (life > 0)
-            {
-                movement.enabled = true;
-                attackColdown = false;
-                if (justMove)
-                    yield return null;
-                controller.enabled = true;
-            }
-        }
-        isMovementDisabled--;
-    }
-
-    /*private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.GetComponent<Attack>() != null)
-        {
-            if (other.gameObject.GetComponent<Attack>().target == gameObject)
-            {
-                StartCoroutine(EnableMovement(false, 1f));
-            }
-        }
-
-        if (other.gameObject.GetComponent<InteractableItem>() != null)
-        {
-            InteractableItem item = other.gameObject.GetComponent<InteractableItem>();
-            switch (item.type)
-            {
-                case ObjectType.Potion:
-                    potions++;
-                    UpdateUIItem(manager.potions, potions);
-                    break;
-                case ObjectType.Knife:
-                    swords += 3;
-                    UpdateUIItem(manager.swords, swords);
-                    break;
-                case ObjectType.PowerUp:
-                    UpdateUIItem(manager.powerUp, 1);
-                    break;
-                default:
-                    break;
-            }
-            Destroy(other.gameObject);
-        }
-    }*/
-
-    public void TakePotion()
-    {
-        if (life < 10 && potions > 0)
-        {
-            potions--;
-            UpdateUIItem(manager.potions, potions);
-            life += 4;
-            life = life > 10 ? 10 : life;
-            manager.PlayerHealthBar.SetHealth(life);
-        }
-    }
-
-    /*public void ClosestEnemy()
-    {
-        enemyCloser = null;
-        enemyDistance = 550;
-
-        foreach (var enemy in FindObjectsOfType<Enemy>())
-        {
-            Vector3 temporalUbication = enemy.transform.position;
-            temporalDistance = (temporalUbication - transform.position).magnitude;
-
-            if (temporalDistance < enemyDistance)
-            {
-                enemyDistance = temporalDistance;
-                enemyCloser = enemy.gameObject;
-            }
-        }
-    }*/
-
-    /*public void UpdateEnemyHealthBar()
-    {
-        ClosestEnemy();
-        //manager.EnemyHealthBar.SetHealth(enemyCloser.GetComponent<Human>().life);
-        /*if (DistanceTo(enemyCloser.transform.position) <= 8 && enemyCloser.GetComponent<Human>().life > 0)
-            manager.EnemyHealthBar.gameObject.SetActive(true);
-        else
-            manager.EnemyHealthBar.gameObject.SetActive(false);
-    }*/
-
     public void UpdateUIItem(List<TextMeshProUGUI> items, int actualCount)
     {
         for (int i = 0; i < items.Count; i++)
@@ -150,30 +56,26 @@ public class PlayerController : Human
         item.text = actualCount.ToString();
     }
 
-    void Update()
+    public IEnumerator PlayOcarina()
     {
-        //UpdateEnemyHealthBar();
+        GameManager.instance.ocarinaPlayed = true;
+        yield return new WaitForSeconds(7f);
+        GameManager.instance.ocarinaPlayed = false;
+    }
 
-        /*if (life > 0)
+    public IEnumerator OcarinaCC()
+    {
+        ocarinaCC = true;
+        yield return new WaitForSeconds(60f);
+        ocarinaCC = false;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E) && !ocarinaCC && ocarina)
         {
-            if (Input.GetMouseButtonDown(0) && !attackColdown && movement.enabled && !manager.inventory.activeSelf)
-            {
-                attackColdown = true;
-                movement.enabled = false;
-                StartCoroutine(EnableMovement(true, 1f));
-                if (powerUp)
-                Attack(enemyCloser, 6, hand);
-                else
-                Attack(enemyCloser, 3, hand);
-            }
-            if (Input.GetKeyDown(KeyCode.Q))
-            {
-                TakePotion();
-            }
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                ThrowSword();
-            }
-        }*/
+            StartCoroutine(PlayOcarina());
+            StartCoroutine(OcarinaCC());
+        }
     }
 }

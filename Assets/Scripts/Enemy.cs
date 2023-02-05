@@ -47,7 +47,7 @@ public class Enemy : Human
             if (!stop)
             {
                 playerPosition = manager.player.transform.position;
-                if (GameManager.instance.coins.Count > 0)
+                if (GameManager.instance.coins.Count > 0 && !bribed)
                 {
                     MoveToPoint(GameManager.instance.coins[0].transform.position);
                 }
@@ -119,6 +119,16 @@ public class Enemy : Human
         bribed = true;
         yield return new WaitForSeconds(15f);
         bribed = false;
+    }
+
+    private void Update()
+    {
+        if (GameManager.instance.ocarinaPlayed && !bribed)
+        {
+            print("qwerty");
+            MoveToPoint(distantPoint.transform.position);
+            StartCoroutine(BeingBribed());
+        }
     }
 
     private void OnTriggerEnter(Collider other)

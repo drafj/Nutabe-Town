@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
         swords;
     public TextMeshProUGUI powerUp;
     public List<GameObject> coins = new List<GameObject>();
+    public bool ocarinaPlayed = false;
 
     private void Awake()
     {
