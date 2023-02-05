@@ -5,7 +5,7 @@
 			<value>21 Prop corta cuerda hacha</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>5</value>
 		</property>
 		<relationship name="folder">
 			<destination>{91adb70c-37e4-41f8-975a-1d45a6b9737c}</destination>
@@ -80,6 +80,7 @@
 	<object class="GroupTrack" id="{306986f0-605d-4a34-8cf0-cb7d68c31fbc}">
 		<relationship name="modules">
 			<destination>{4e9ed163-0cfd-48ab-aed2-d606e6dfc6ea}</destination>
+			<destination>{e02feca8-4210-4f77-af34-963e6a29736e}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{5cdb8e98-ff5b-4bc4-9813-b45dd854e6ac}</destination>
@@ -99,6 +100,7 @@
 			<destination>{6a29426b-c60f-42f6-9ed2-e84c976d3610}</destination>
 			<destination>{4e9ed163-0cfd-48ab-aed2-d606e6dfc6ea}</destination>
 			<destination>{18bf4574-9a24-4dc6-9f87-ba51f88e1572}</destination>
+			<destination>{e02feca8-4210-4f77-af34-963e6a29736e}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{b08d396d-a73a-4d5e-b70b-744f4725c815}">
@@ -174,6 +176,17 @@
 		</property>
 		<relationship name="audioFile">
 			<destination>{7c649d86-1cdc-437b-9fc5-bae0f1bf1552}</destination>
+		</relationship>
+	</object>
+	<object class="EventSound" id="{e02feca8-4210-4f77-af34-963e6a29736e}">
+		<property name="start">
+			<value>0.53125</value>
+		</property>
+		<property name="length">
+			<value>3.4138996794119949</value>
+		</property>
+		<relationship name="event">
+			<destination>{4dc4b0e1-1173-4433-9976-4dae632749ad}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{5cdb8e98-ff5b-4bc4-9813-b45dd854e6ac}">

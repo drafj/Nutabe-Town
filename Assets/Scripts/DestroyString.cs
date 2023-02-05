@@ -41,6 +41,7 @@ public class DestroyString : MonoBehaviour
                 Destroy(cuerda);
                 key.SetActive(true);
                 rbTrap.isKinematic = false;
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Prop/21 Prop corta cuerda hacha");
             }
         }
     }

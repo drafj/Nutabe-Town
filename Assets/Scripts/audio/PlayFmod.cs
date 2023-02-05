@@ -13,4 +13,9 @@ public class PlayFmod : MonoBehaviour
         emitter[i].Play();
     }
 
+    public void stopSound(int i)
+    {
+        emitter[i].Stop();
+    }
 }
+
