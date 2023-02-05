@@ -937,6 +937,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 192
   enemyType: 1
+  follow: 0
+  toFollow: {fileID: 0}
 --- !u!195 &3030551584091383923
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -947,7 +949,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
+  m_Speed: 5
   m_Acceleration: 20
   avoidancePriority: 50
   m_AngularSpeed: 1200
@@ -1101,6 +1103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958787d1dd0fba54bb30194cef6e1947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fade: {fileID: 0}
+  freeLook: {fileID: 0}
 --- !u!1 &3039432265862637199
 GameObject:
   m_ObjectHideFlags: 0
