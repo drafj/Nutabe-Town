@@ -6,6 +6,8 @@ public class InstanciarMoneda : MonoBehaviour
 {
     public GameObject esferaPrueba;
     public Transform creador;
+    private int amountOfCoins = 10;
+
     void Start()
     {
         
@@ -13,9 +15,10 @@ public class InstanciarMoneda : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("l"))
+        if (Input.GetKeyDown("l") && amountOfCoins > 0)
         {
             CrearMoneda();
+            amountOfCoins--;
         }
     }
 
