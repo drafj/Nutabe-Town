@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,10 @@ using Cinemachine;
 
 public class PlayerController : Human
 {
+    public GameObject maletin;
     public bool gotMaletin = false;
+    
+    
     public int
         potions,
         swords,
@@ -33,6 +37,15 @@ public class PlayerController : Human
         foreach (Enemy enemy in FindObjectsOfType<Enemy>())
         {
             remainingEnemies++;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "maletin")
+        {
+            Destroy(maletin);
+            gotMaletin = true;
         }
     }
 
