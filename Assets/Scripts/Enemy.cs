@@ -16,7 +16,7 @@ public class Enemy : Human
     public NavMeshAgent agent;
     public Transform hand;
     public LayerMask layer;
-    public bool knocked;
+    public EnemyType enemyType;
     private bool bribed;
     private int patrolIndex = 0;
     private Vector3 actualPatrolPoint;
@@ -68,7 +68,7 @@ public class Enemy : Human
                             agent.isStopped = true;
                             Vector3 targetPlayer = new Vector3(playerPosition.x, transform.position.y, playerPosition.z);
                             transform.LookAt(targetPlayer);
-                            StartCoroutine(Attack(hand));
+                            StartCoroutine(Attack(hand, enemyType));
                             yield return new WaitForSeconds(2f);
                         }
                     }
@@ -125,7 +125,6 @@ public class Enemy : Human
     {
         if (GameManager.instance.ocarinaPlayed && !bribed)
         {
-            print("qwerty");
             MoveToPoint(distantPoint.transform.position);
             StartCoroutine(BeingBribed());
         }
@@ -165,3 +164,5 @@ public class Enemy : Human
         Gizmos.DrawWireSphere(transform.position, 8f);
     }
 }
+
+public enum EnemyType { Vigilante, Predicador }
