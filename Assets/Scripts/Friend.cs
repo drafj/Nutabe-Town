@@ -15,6 +15,7 @@ public class Friend : MonoBehaviour
     attackRange;
     public List<GameObject> patrolPoints = new List<GameObject>();
     public bool runAway = false;
+    public bool targetSet = false;
     private int patrolIndex = 0;
     private Vector3 actualPatrolPoint;
     private Vector3 enemyPosition;
@@ -35,12 +36,12 @@ public class Friend : MonoBehaviour
         {
             ClosestEnemy();
             enemyPosition = enemyCloser.transform.position;
-            if (DistanceTo(enemyPosition) <= sightRange && !runAway)
+            if (DistanceTo(enemyPosition) <= sightRange && !runAway || targetSet && !runAway)
             {
                 MoveToPoint(enemyPosition);
                 if (DistanceTo(enemyPosition) <= attackRange && !runAway)
                 {
-                    Debug.Log("llama al ataque");
+                    targetSet = true;
                     agent.isStopped = true;
                     Vector3 targetPlayer = new Vector3(enemyPosition.x, transform.position.y, enemyPosition.z);
                     transform.LookAt(targetPlayer);
