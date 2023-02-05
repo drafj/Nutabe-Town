@@ -9,10 +9,17 @@ public class EventSystem : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
     public void Credits()
     {
         SceneManager.LoadScene(3);
     }
+
+    public void Return()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public void Exit()
     {
         Exit();
