@@ -107,10 +107,8 @@ public class Enemy : Human
 
     private void OnTriggerEnter(Collider other)
     {
-            print("colisiona");
         if (other.CompareTag("FarPoint"))
         {
-            print("entra");
             anim.SetBool("IsMoving", false);
         }
         /*if (other.gameObject.GetComponent<Attack>() != null)
