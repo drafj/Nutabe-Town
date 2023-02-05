@@ -53,6 +53,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Heigth_Offset: 0
+    - _Metallic: 0.6
     - _Movement_Speed: 0
     - _Movement_Stregth: 0.01
     - _QueueControl: 0

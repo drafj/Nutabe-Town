@@ -37,7 +37,7 @@ public class Movement : MonoBehaviour
 
         moveVel = playerInput.x * camRight + playerInput.z * camForward;
         target.transform.LookAt(target.transform.position + moveVel);
-        if (moveVel.magnitude >= 0.1f)
+        if (moveVel.magnitude >= 0.4f)
         transform.rotation = Quaternion.Lerp(transform.rotation, target.rotation, 5 * Time.deltaTime);
         SetGravity();
         JumpVerifier();
