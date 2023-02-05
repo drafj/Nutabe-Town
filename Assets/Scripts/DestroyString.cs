@@ -7,12 +7,14 @@ public class DestroyString : MonoBehaviour
     public bool gotAxe = false;
     public GameObject axe;
     public GameObject cuerda;
+    public GameObject key;
     public Rigidbody rbTrap;
 
     void Start()
     {
         rbTrap.GetComponent<Rigidbody>();
         rbTrap.isKinematic = true;
+        key.SetActive(false);
     }
 
     // Update is called once per frame
@@ -37,6 +39,7 @@ public class DestroyString : MonoBehaviour
             if (gotAxe == true && Input.GetKeyDown("j"))
             {
                 Destroy(cuerda);
+                key.SetActive(true);
                 rbTrap.isKinematic = false;
             }
         }

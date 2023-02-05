@@ -2493,6 +2493,27 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 3.1
       objectReference: {fileID: 0}
+    - target: {fileID: 2673592820024983906, guid: 413a33d5affe80c40b24802c63d53fe6,
+        type: 3}
+      propertyPath: jump.m_Reference
+      value: 
+      objectReference: {fileID: -3878726715353143036, guid: d65aad2e778fe8349a93cd66c59523cf,
+        type: 3}
+    - target: {fileID: 2673592820024983906, guid: 413a33d5affe80c40b24802c63d53fe6,
+        type: 3}
+      propertyPath: jump.m_Action.m_Id
+      value: 2aab3222-5aa2-445b-9682-43e37920214d
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673592820024983906, guid: 413a33d5affe80c40b24802c63d53fe6,
+        type: 3}
+      propertyPath: jump.m_UseReference
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2673592820024983906, guid: 413a33d5affe80c40b24802c63d53fe6,
+        type: 3}
+      propertyPath: jump.m_Action.m_Name
+      value: Jump
+      objectReference: {fileID: 0}
     - target: {fileID: 2673592820024983907, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
       propertyPath: m_Center.y
@@ -2571,12 +2592,12 @@ PrefabInstance:
     - target: {fileID: 5673427608841833944, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.24052177
+      value: 0.24052174
       objectReference: {fileID: 0}
     - target: {fileID: 5673427608841833944, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.1020189
+      value: -0.10201888
       objectReference: {fileID: 0}
     - target: {fileID: 5868600986185722986, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
