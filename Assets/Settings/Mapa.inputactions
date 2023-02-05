@@ -1,0 +1,45 @@
+{
+    "name": "Mapa",
+    "maps": [
+        {
+            "name": "Pablo",
+            "id": "664b21ac-21d6-4d56-82a3-91b84b28a816",
+            "actions": [
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "331ae71d-5dc2-4b9d-aafc-04b3a0b24b70",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5ca23deb-503a-4f0e-8e06-c61ea83bd3fb",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1d149263-b3d2-44d7-827f-22ce8686a5c3",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

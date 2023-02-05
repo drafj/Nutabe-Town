@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class Movement : MonoBehaviour
 {
+    public InputActionProperty jump;
     public CharacterController controller;
     public Transform cam;
     public Transform target;
@@ -23,6 +25,11 @@ public class Movement : MonoBehaviour
     private Vector3 playerInput;
     private Vector3 camRight;
     private Vector3 camForward;
+
+    private void Start()
+    {
+        jump.action.Enable();
+    }
 
     void Update()
     {
@@ -110,7 +117,8 @@ public class Movement : MonoBehaviour
 
     void JumpVerifier()
     {
-        if (isGrounded && !isJumping && Input.GetKeyDown(KeyCode.Space) || isGrounded && !isJumping && Input.GetKeyDown(KeyCode.Joystick1Button1))
+        //if (isGrounded && !isJumping && Input.GetKeyDown(KeyCode.Space) || isGrounded && !isJumping && Input.GetKeyDown(KeyCode.Joystick1Button1))
+        if (isGrounded && !isJumping && jump.action.ReadValue<float>() > 0.5f)
         {
             transform.parent = null;
             fallVelocity = jumpForce;
