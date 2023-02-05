@@ -7,9 +7,10 @@ public class Key : MonoBehaviour
     public GameObject key;
     public GameObject door;
     public bool getKey;
+    public Collider coll;
     void Start()
     {
-
+        coll.GetComponent<Collider>();
     }
 
     // Update is called once per frame
@@ -24,6 +25,7 @@ public class Key : MonoBehaviour
         {
             Destroy(key);
             getKey = true;
+            coll.isTrigger = true;
         }
 
         if (other.tag == "Door" && getKey == true) 
