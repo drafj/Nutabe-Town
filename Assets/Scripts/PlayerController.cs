@@ -9,6 +9,8 @@ public class PlayerController : Human
 {
     public GameObject maletin;
     public bool gotMaletin = false;
+    
+    
     public bool ocarina = false;
     public bool ocarinaCC = false;
     
