@@ -16,4 +16,9 @@ public class Fade : MonoBehaviour
     {
         animator.Play("FadeOut");
     }
+
+    public void Lose()
+    {
+        animator.Play("lose");
+    }
 }

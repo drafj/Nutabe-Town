@@ -7,6 +7,7 @@ public class ChangeScene : MonoBehaviour
 {
     public GameObject artilugio;
     public GameObject portal;
+    public Fade fade;
     public void LoadScene(string scene)
     {
         SceneManager.LoadScene(scene);
@@ -16,8 +17,9 @@ public class ChangeScene : MonoBehaviour
     {
         if (other.tag == "Portal")
         {
-            SceneManager.LoadScene("Level2");
+            SceneManager.LoadScene("Level02");
         }
+    
         if (other.tag == "Portal2")
         {
             SceneManager.LoadScene(0);

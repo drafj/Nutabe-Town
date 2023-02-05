@@ -13,7 +13,7 @@ public class Hit : MonoBehaviour
         if (other.TryGetComponent(out PlayerController playerController))
         {
             Invoke("WaitFade", 3f);
-            fade.FadeOut();
+            fade.Lose();
             playerController.GetComponent<Movement>().enabled = false;
             freeLook.enabled = false;
         }
