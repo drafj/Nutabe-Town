@@ -36,7 +36,7 @@ public class DestroyString : MonoBehaviour
     {
         if (other.tag == "cuerda")
         {
-            if (gotAxe == true && Input.GetKeyDown("j"))
+            if (gotAxe == true && Input.GetKeyDown("q"))
             {
                 Destroy(cuerda);
                 key.SetActive(true);

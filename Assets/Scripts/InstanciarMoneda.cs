@@ -15,7 +15,7 @@ public class InstanciarMoneda : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown("l") && amountOfCoins > 0)
+        if (Input.GetKeyDown("e") && amountOfCoins > 0)
         {
             CrearMoneda();
             amountOfCoins--;
