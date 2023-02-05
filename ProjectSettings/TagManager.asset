@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - maletin
   - FarPoint
+  - Trampa
   layers:
   - Default
   - TransparentFX

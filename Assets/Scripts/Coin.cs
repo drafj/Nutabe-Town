@@ -10,6 +10,7 @@ public class Coin : MonoBehaviour
     {
         if (other.gameObject.TryGetComponent(out Enemy enemy) && !playerCoin)
         {
+            enemy.Stop();
             GameManager.instance.coins.Remove(gameObject);
             gameObject.SetActive(false);
         }

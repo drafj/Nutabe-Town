@@ -21,6 +21,7 @@ public class Enemy : Human
     private int patrolIndex = 0;
     private Vector3 actualPatrolPoint;
     private Vector3 playerPosition;
+    private bool stop;
 
     void Start()
     {
@@ -43,59 +44,74 @@ public class Enemy : Human
     {
         while (agent.enabled)
         {
-            playerPosition = manager.player.transform.position;
-            if (GameManager.instance.coins.Count > 0)
+            if (!stop)
             {
-                MoveToPoint(GameManager.instance.coins[0].transform.position);
-            }
-            else if (DistanceTo(playerPosition) <= sightRange && !bribed)
-            {
-                MoveToPoint(playerPosition);
-                if (DistanceTo(playerPosition) <= attackRange)
+                playerPosition = manager.player.transform.position;
+                if (GameManager.instance.coins.Count > 0)
                 {
-                    if (playerController.gotMaletin == true)
+                    MoveToPoint(GameManager.instance.coins[0].transform.position);
+                }
+                else if (DistanceTo(playerPosition) <= sightRange && !bribed)
+                {
+                    MoveToPoint(playerPosition);
+                    if (DistanceTo(playerPosition) <= attackRange)
                     {
-                        playerController.gotMaletin = false;
-                        StartCoroutine(BeingBribed());
-                        MoveToPoint(distantPoint.transform.position);
+                        if (playerController.gotMaletin == true)
+                        {
+                            playerController.gotMaletin = false;
+                            StartCoroutine(BeingBribed());
+                            MoveToPoint(distantPoint.transform.position);
+                        }
+                        else
+                        {
+                            anim.SetTrigger("Attack");
+                            agent.isStopped = true;
+                            Vector3 targetPlayer = new Vector3(playerPosition.x, transform.position.y, playerPosition.z);
+                            transform.LookAt(targetPlayer);
+                            StartCoroutine(Attack(hand));
+                            yield return new WaitForSeconds(2f);
+                        }
+                    }
+
+                    else
+                    {
+                        MoveToPoint(playerPosition);
+                        agent.isStopped = false;
+                    }
+                }
+                else if (!bribed)
+                {
+                    if (patrolPoints.Count <= 0)
+                        yield return null;
+
+                    actualPatrolPoint = patrolPoints[patrolIndex].transform.position;
+                    if (DistanceTo(actualPatrolPoint) > 1.25)
+                    {
+                        agent.isStopped = false;
+                        agent.stoppingDistance = 0.5f;
+                        MoveToPoint(actualPatrolPoint);
                     }
                     else
                     {
-                        anim.SetTrigger("Attack");
-                        agent.isStopped = true;
-                        Vector3 targetPlayer = new Vector3(playerPosition.x, transform.position.y, playerPosition.z);
-                        transform.LookAt(targetPlayer);
-                        StartCoroutine(Attack(hand));
-                        yield return new WaitForSeconds(2f);
+                        patrolIndex++;
+                        patrolIndex = patrolIndex == patrolPoints.Count ? 0 : patrolIndex;
                     }
-                }
-
-                else
-                {
-                    MoveToPoint(playerPosition);
-                    agent.isStopped = false;
-                }
-            }
-            else if (!bribed)
-            {
-                if (patrolPoints.Count <= 0)
-                    yield return null;
-
-                actualPatrolPoint = patrolPoints[patrolIndex].transform.position;
-                if (DistanceTo(actualPatrolPoint) > 1.25)
-                {
-                    agent.isStopped = false;
-                    agent.stoppingDistance = 0.5f;
-                    MoveToPoint(actualPatrolPoint);
-                }
-                else
-                {
-                    patrolIndex++;
-                    patrolIndex = patrolIndex == patrolPoints.Count ? 0 : patrolIndex;
                 }
             }
             yield return null;
         }
+    }
+
+    public void Stop()
+    {
+        anim.SetBool("IsMoving", false);
+        stop = true;
+        Invoke("StopDelay", 2);
+    }
+
+    void StopDelay()
+    {
+        stop = false;
     }
 
     IEnumerator BeingBribed()
@@ -110,6 +126,13 @@ public class Enemy : Human
         if (other.CompareTag("FarPoint"))
         {
             anim.SetBool("IsMoving", false);
+        }
+
+        if (other.CompareTag("Trampa"))
+        {
+            print("en la trampa");
+            anim.SetBool("IsMoving", false);
+            agent.enabled = false;
         }
         /*if (other.gameObject.GetComponent<Attack>() != null)
         {
