@@ -459,6 +459,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.098578475
       objectReference: {fileID: 0}
+    - target: {fileID: 1279075252484288877, guid: 413a33d5affe80c40b24802c63d53fe6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1755161717870834071, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2175,6 +2180,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Poli2
       objectReference: {fileID: 0}
+    - target: {fileID: 2796673014652900647, guid: a800384d918384248b5064b5438de8bf,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3030551584091383922, guid: a800384d918384248b5064b5438de8bf,
         type: 3}
       propertyPath: distantPoint
@@ -2396,6 +2406,31 @@ PrefabInstance:
     - target: {fileID: 8858328045726677112, guid: ddda9cf678829ec47996fae797242fab,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035807523240201350, guid: ddda9cf678829ec47996fae797242fab,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035807523240201351, guid: ddda9cf678829ec47996fae797242fab,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5770354
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035807523240201351, guid: ddda9cf678829ec47996fae797242fab,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.7769487
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035807523240201351, guid: ddda9cf678829ec47996fae797242fab,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.786
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035807523240201354, guid: ddda9cf678829ec47996fae797242fab,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9035807524755234705, guid: ddda9cf678829ec47996fae797242fab,
