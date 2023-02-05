@@ -13,6 +13,8 @@ TagManager:
   - maletin
   - FarPoint
   - Trampa
+  - Key
+  - Door
   layers:
   - Default
   - TransparentFX
