@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: "Assets/Scenes/Definitivos/Men\xFA.unity"
     guid: ce5d6c9b7c715fd459ccdbc23041ba9c
   - enabled: 1
+    path: Assets/Scenes/Definitivos/intro.unity
+    guid: 83ebf5d67e0789f4e9a1302ee2f5104b
+  - enabled: 1
     path: Assets/Scenes/Definitivos/Level01.unity
     guid: 15cc404dc8273314fbf70c5038095623
   - enabled: 1
