@@ -42,8 +42,7 @@ public class InstanciarMoneda : MonoBehaviour
 
     void CrearMoneda()
     {
-        GameObject esferaCreada = Instantiate(esferaPrueba, creador);
-        esferaCreada.transform.parent = null;
+        GameObject esferaCreada = Instantiate(esferaPrueba, creador.transform.position + new Vector3(0, 1, 0), Quaternion.identity);
         GameManager.instance.coins.Add(esferaCreada);
     }
 }
