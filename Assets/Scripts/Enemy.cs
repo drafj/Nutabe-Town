@@ -91,7 +91,7 @@ public class Enemy : Human
                             yield return null;
 
                         actualPatrolPoint = patrolPoints[patrolIndex].transform.position;
-                        if (DistanceTo(actualPatrolPoint) > 1.25)
+                        if (DistanceTo(actualPatrolPoint) > 1.5)
                         {
                             agent.isStopped = false;
                             agent.stoppingDistance = 0.5f;
