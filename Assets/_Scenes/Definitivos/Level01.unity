@@ -2720,7 +2720,7 @@ PrefabInstance:
     - target: {fileID: 1924278378817745407, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.15168545
+      value: 0.15168546
       objectReference: {fileID: 0}
     - target: {fileID: 1924278378817745407, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
@@ -2730,7 +2730,7 @@ PrefabInstance:
     - target: {fileID: 1924278378817745407, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.377807
+      value: -0.37780696
       objectReference: {fileID: 0}
     - target: {fileID: 2490556548949124749, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
@@ -2896,7 +2896,7 @@ PrefabInstance:
     - target: {fileID: 5673427608841833944, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.14548683
+      value: 0.14548685
       objectReference: {fileID: 0}
     - target: {fileID: 5673427608841833944, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
@@ -5877,6 +5877,10 @@ PrefabInstance:
       propertyPath: agent
       value: 
       objectReference: {fileID: 837242299}
+    - target: {fileID: 388751847, guid: ebe4bbbe71924a343be28bbb8b699a8e, type: 3}
+      propertyPath: canGetCoins
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 388751847, guid: ebe4bbbe71924a343be28bbb8b699a8e, type: 3}
       propertyPath: distantPoint
       value: 

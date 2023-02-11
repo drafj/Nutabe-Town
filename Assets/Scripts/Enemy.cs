@@ -22,6 +22,7 @@ public class Enemy : Human
     private Vector3 actualPatrolPoint;
     private Vector3 playerPosition;
     private bool stop;
+    public bool canGetCoins;
     public bool follow;
     public Transform toFollow;
 
@@ -51,7 +52,7 @@ public class Enemy : Human
                 if (!stop)
                 {
                     playerPosition = manager.player.transform.position;
-                    if (GameManager.instance.coins.Count > 0 && !bribed)
+                    if (GameManager.instance.coins.Count > 0 && !bribed && canGetCoins)
                     {
                         MoveToPoint(GameManager.instance.coins[0].transform.position);
                     }

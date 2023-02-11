@@ -795,6 +795,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 192
   enemyType: 0
+  canGetCoins: 1
   follow: 0
   toFollow: {fileID: 0}
 --- !u!114 &5879699275420341208
