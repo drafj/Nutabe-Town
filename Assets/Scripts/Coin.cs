@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
+    public GameObject panelCoin; //Agregado por Ed
     public bool playerCoin;
 
     private void OnTriggerEnter(Collider other)
@@ -19,6 +20,8 @@ public class Coin : MonoBehaviour
         {
             InstanciarMoneda.amountOfCoins = 10;
             gameObject.SetActive(false);
+            panelCoin.SetActive(true); //Agregado por Ed
+            Time.timeScale = 0; //Agregado por Ed
         }
     }
 }

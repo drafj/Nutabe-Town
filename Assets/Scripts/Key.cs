@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Key : MonoBehaviour
 {
+    public GameObject panel;
     public GameObject key;
     public GameObject door;
     public bool getKey;
@@ -26,6 +27,7 @@ public class Key : MonoBehaviour
             Destroy(key);
             getKey = true;
             coll.isTrigger = true;
+            panel.SetActive(true);
         }
 
         if (other.tag == "Door" && getKey == true) 
