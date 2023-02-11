@@ -18,6 +18,8 @@ public class Coin : MonoBehaviour
 
         if (other.TryGetComponent(out InstanciarMoneda InstanciarMoneda) && playerCoin)
         {
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
             InstanciarMoneda.amountOfCoins = 10;
             gameObject.SetActive(false);
             panelCoin.SetActive(true); //Agregado por Ed

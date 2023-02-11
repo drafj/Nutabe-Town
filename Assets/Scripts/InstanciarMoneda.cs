@@ -10,11 +10,6 @@ public class InstanciarMoneda : MonoBehaviour
     public int amountOfCoins;
     public bool canTakeCoins;
 
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         if (Input.GetKeyDown("e") && amountOfCoins > 0 && canTakeCoins)
