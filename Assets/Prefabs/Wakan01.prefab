@@ -1409,8 +1409,8 @@ MonoBehaviour:
   controller: {fileID: 2673592820024983907}
   cam: {fileID: 0}
   target: {fileID: 2673592821044033233}
-  speed: 6
-  jumpForce: 2
+  speed: 4.6
+  jumpForce: 3.5
   turnSmoothTime: 0.1
   turnSmoothVelocity: 0
   anim: {fileID: 6052521911349940456}
