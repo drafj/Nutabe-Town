@@ -43,10 +43,11 @@ public class Friend : MonoBehaviour
                 {
                     targetSet = true;
                     agent.isStopped = true;
-                    Vector3 targetPlayer = new Vector3(enemyPosition.x, transform.position.y, enemyPosition.z);
-                    transform.LookAt(targetPlayer);
+                    Vector3 targetEnemy = new Vector3(enemyPosition.x, transform.position.y, enemyPosition.z);
+                    transform.LookAt(targetEnemy);
                     StartCoroutine(Attack(hand));
-                    yield return new WaitForSeconds(0.7f);
+                    yield return new WaitForSeconds(1.2f);
+                    agent.isStopped = false;
                 }
             }
             else if (runAway)
