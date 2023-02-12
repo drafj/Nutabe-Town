@@ -149,11 +149,17 @@ public class Enemy : Human
             anim.SetBool("IsMoving", false);
         }
 
-        if (other.CompareTag("Trampa"))
+        if (other.TryGetComponent(out Trap trap))
         {
-            print("en la trampa");
-            anim.SetBool("IsMoving", false);
-            agent.enabled = false;
+            if (trap.falling)
+            {
+                anim.SetBool("IsMoving", false);
+                agent.enabled = false;
+                transform.parent = trap.transform;
+                transform.position = trap.trapPositions[trap.trapPosIndex].position;
+                if (trap.trapPositions.Count > trap.trapPosIndex)
+                    trap.trapPosIndex++;
+            }
         }
     }
 
