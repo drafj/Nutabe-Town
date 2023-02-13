@@ -20,10 +20,13 @@ public class EventSystem : MonoBehaviour
     }
     public void Exit()
     {
+        Debug.Log("Saliendo...");
         Application.Quit();
     }
     public void UnPause()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         Time.timeScale = 1;
     }
 }

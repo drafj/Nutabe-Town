@@ -6,6 +6,7 @@ using Cinemachine;
 
 public class ChangeScene : MonoBehaviour
 {
+    public GameObject panelTunica;
     public GameObject artilugio;
     public GameObject portal;
     public Fade fade;
@@ -46,6 +47,11 @@ public class ChangeScene : MonoBehaviour
             Destroy(artilugio);
             portal.SetActive(true);
             emitter.Play();
+            
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+            panelTunica.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DestroyString : MonoBehaviour
 {
+    public GameObject panelAxe;
     public bool gotAxe = false;
     public GameObject axe;
     public GameObject cuerda;
@@ -16,19 +17,17 @@ public class DestroyString : MonoBehaviour
         rbTrap.isKinematic = true;
         key.SetActive(false);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Axe")
         {
             Destroy(axe);
             gotAxe = true;
+            
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+            panelAxe.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 

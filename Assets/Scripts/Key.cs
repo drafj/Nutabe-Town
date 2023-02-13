@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Key : MonoBehaviour
 {
-    public GameObject panel;
+    public GameObject panelKey;
     public GameObject key;
     public GameObject door;
     public bool getKey;
@@ -27,7 +27,11 @@ public class Key : MonoBehaviour
             Destroy(key);
             getKey = true;
             coll.isTrigger = true;
-            panel.SetActive(true);
+            
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+            panelKey.SetActive(true);
+            Time.timeScale = 0;
         }
 
         if (other.tag == "Door" && getKey == true) 
