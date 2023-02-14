@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 1
+  m_Fog: 0
   m_FogColor: {r: 0.7924528, g: 0.69069123, b: 0.41416872, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.032
@@ -7888,6 +7888,7 @@ MonoBehaviour:
   playerController: {fileID: 993755014}
   freeLook: {fileID: 172549176}
   emitter: {fileID: 1875586814}
+  enemies: []
 --- !u!114 &993755014 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2673592820024983906, guid: 413a33d5affe80c40b24802c63d53fe6,

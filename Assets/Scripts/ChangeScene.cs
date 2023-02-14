@@ -13,6 +13,7 @@ public class ChangeScene : MonoBehaviour
     public Movement playerController;
     public CinemachineFreeLook freeLook;
     public FMODUnity.StudioEventEmitter emitter;
+    public List<Enemy> enemies = new List<Enemy>(); 
     public void LoadScene(string scene)
     {
         SceneManager.LoadScene(scene);
@@ -27,6 +28,8 @@ public class ChangeScene : MonoBehaviour
             fade.FadeOut();
             playerController.anim.SetBool("IsMoving", false);
             playerController.enabled = false;
+            playerController.GetComponent<Collider>().enabled = false;
+            DesableEnemies();
             freeLook.enabled = false;
             Invoke("WaitFade", 3f);
             
@@ -38,6 +41,7 @@ public class ChangeScene : MonoBehaviour
             fade.FadeOut();
             playerController.anim.SetBool("IsMoving", false);
             playerController.enabled = false;
+            DesableEnemies();
             freeLook.enabled = false;
             Invoke("WaitFade2", 3f);
             
@@ -64,4 +68,20 @@ public class ChangeScene : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+
+    void DesableEnemies()
+    {
+        foreach (var item in GameObject.FindObjectsOfType<Enemy>())
+        {
+            enemies.Add(item);
+        }
+        for (int i = 0; i < enemies.Count; i++)
+        {
+            enemies[i].agent.isStopped = true;
+            enemies[i].agent.enabled = false;
+            enemies[i].anim.SetBool("IsMoving", false);
+            enemies[i].enabled = false;
+        }
+    }
+
 }
