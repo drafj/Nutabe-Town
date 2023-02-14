@@ -3,7 +3,12 @@ guid: bc61a995ad36ec044b8068fd7036d285
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CharacterSHader
+    second: {fileID: 2100000, guid: 4d2835662f364a844a3891e2694c1f28, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
