@@ -54,7 +54,7 @@
 			<destination>{fba2d5c4-3bea-402d-93a9-4947fb99f1ee}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{befdcf5b-d927-4c0b-b771-daf1be0f8798}</destination>
+			<destination>{96b86a24-5d72-410e-b159-578d239fccbf}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{f4361aed-0795-4d96-b07d-ee4af44f53b8}" />
@@ -225,7 +225,11 @@
 	</object>
 	<object class="MixerBusPanner" id="{2c02e424-da3e-43f9-a1c9-c56706cdbafe}" />
 	<object class="MixerBusFader" id="{b2f56be7-cccc-4951-a8b9-6b627f723f46}" />
-	<object class="SpatialiserEffect" id="{2867ccfc-85cb-4196-b9ee-e5bd95744e4a}" />
+	<object class="SpatialiserEffect" id="{2867ccfc-85cb-4196-b9ee-e5bd95744e4a}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
+	</object>
 	<object class="MultibandEqEffect" id="{d2270ce2-91f6-47d1-b482-6fe0f75707ec}">
 		<property name="filterTypeA">
 			<value>9</value>

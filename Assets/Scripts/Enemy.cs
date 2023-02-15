@@ -25,6 +25,7 @@ public class Enemy : Human
     public bool canGetCoins;
     public bool follow;
     public Transform toFollow;
+    private FMOD.Studio.EventInstance instance;
 
     void Start()
     {
@@ -58,7 +59,11 @@ public class Enemy : Human
                     }
                     else if (DistanceTo(playerPosition) <= sightRange && !bribed)
                     {
-                        FMODUnity.RuntimeManager.PlayOneShot("event:/vigilante/03 Vigilante Alerta");
+                        //reproducir sonido de alerta
+                        instance = FMODUnity.RuntimeManager.CreateInstance("event:/vigilante/03 Vigilante Alerta");
+                        FMODUnity.RuntimeManager.AttachInstanceToGameObject(instance, GetComponent<Transform>(), GetComponent<Rigidbody>());
+                        instance.start(); 
+
                         MoveToPoint(playerPosition);
                         if (DistanceTo(playerPosition) <= attackRange)
                         {

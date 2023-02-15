@@ -56,7 +56,7 @@
 			<destination>{5f8a5426-cef3-4aff-9a4a-76244fefe431}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{befdcf5b-d927-4c0b-b771-daf1be0f8798}</destination>
+			<destination>{96b86a24-5d72-410e-b159-578d239fccbf}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{2f6759ea-ca88-4635-983e-9e662ba8c6c3}" />
@@ -386,7 +386,11 @@
 	</object>
 	<object class="MixerBusPanner" id="{0750db26-c28a-4ad0-9834-57d5bcc4a7f6}" />
 	<object class="MixerBusFader" id="{a91c0ba6-846f-4fb0-ac80-fdf52320b9f9}" />
-	<object class="SpatialiserEffect" id="{655c0ed2-7253-4e1f-9a8c-d692a79cdf42}" />
+	<object class="SpatialiserEffect" id="{655c0ed2-7253-4e1f-9a8c-d692a79cdf42}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{ed6ab3b4-c84a-4217-b0c1-a828440c24e8}" />
 	<object class="MultibandEqEffect" id="{f9332e5d-56f1-4cea-8610-637630474a0c}">
 		<property name="frequencyA">

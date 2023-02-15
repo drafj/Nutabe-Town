@@ -1600,7 +1600,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 71.4
+  m_fontSize: 62.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5311,7 +5311,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &715037488
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7577,8 +7577,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983975003}
-  m_LocalRotation: {x: 0.036251903, y: 0.8212334, z: -0.05250537, w: 0.56701386}
-  m_LocalPosition: {x: -38.779564, y: 2.0424757, z: 30.238602}
+  m_LocalRotation: {x: 0.069455214, y: -0.39359537, z: 0.0298386, w: 0.9161705}
+  m_LocalPosition: {x: 5.07498, y: 2.17, z: -3.420377}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

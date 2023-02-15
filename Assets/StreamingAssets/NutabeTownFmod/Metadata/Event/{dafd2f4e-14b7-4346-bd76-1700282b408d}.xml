@@ -54,7 +54,7 @@
 			<destination>{d49ddfac-4131-414c-89cc-3be8e9d7cdbe}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{befdcf5b-d927-4c0b-b771-daf1be0f8798}</destination>
+			<destination>{96b86a24-5d72-410e-b159-578d239fccbf}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{d64b9b5c-acdc-44e4-b7f0-90c5aa8b968a}" />
@@ -84,6 +84,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{b56f8f45-7eae-4e75-88da-e34e91a474a2}">
+		<property name="volume">
+			<value>-11.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{ab7b88d7-00ca-4ab2-99a3-ab2dcc4b0cd0}</destination>
 		</relationship>
@@ -119,7 +122,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{2cd90212-eeba-49e2-83b2-229e1da1506f}">
 		<property name="volume">
-			<value>-18.5</value>
+			<value>-28.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -161,6 +164,9 @@
 		<property name="length">
 			<value>1.2272052154195012</value>
 		</property>
+		<property name="startOffset">
+			<value>10</value>
+		</property>
 		<property name="timelockedOffset">
 			<value>0.5582174940183412</value>
 		</property>
@@ -169,6 +175,7 @@
 		</property>
 		<relationship name="modulators">
 			<destination>{b166ddca-c1a5-43d5-bc9c-b6c8fd942e56}</destination>
+			<destination>{7b459a69-ae8a-4dc4-b80e-798d21220a14}</destination>
 		</relationship>
 		<relationship name="fadeInCurve">
 			<destination>{2aefe77e-492f-4f01-8dc2-6fff7736aa52}</destination>
@@ -240,6 +247,14 @@
 			<value>6.5</value>
 		</property>
 	</object>
+	<object class="RandomizerModulator" id="{7b459a69-ae8a-4dc4-b80e-798d21220a14}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>startOffset</value>
+		</property>
+		<property name="amount">
+			<value>12</value>
+		</property>
+	</object>
 	<object class="FadeCurve" id="{2aefe77e-492f-4f01-8dc2-6fff7736aa52}">
 		<relationship name="startPoint">
 			<destination>{f35d8879-1ac0-4ef2-bbd4-f8ef8d54faa4}</destination>
@@ -258,7 +273,11 @@
 	</object>
 	<object class="MixerBusPanner" id="{672a0f08-7c98-4eef-a609-38abc0dbf006}" />
 	<object class="MixerBusFader" id="{353d781e-009c-40b3-9192-986f7130d63d}" />
-	<object class="SpatialiserEffect" id="{405ddc8b-d201-45a2-a21a-7e4e7a94f77c}" />
+	<object class="SpatialiserEffect" id="{405ddc8b-d201-45a2-a21a-7e4e7a94f77c}">
+		<property name="bypass">
+			<value>true</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{f5adaf8f-e2df-43b6-a3f6-4fa4785a7101}" />
 	<object class="AutomationPoint" id="{ad42e9fa-8fee-4c79-802b-ea816dfdde35}">
 		<property name="position">
