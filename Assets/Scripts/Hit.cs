@@ -17,7 +17,7 @@ public class Hit : MonoBehaviour
             fade.Lose();
             playerController.GetComponent<Movement>().enabled = false;
             freeLook.enabled = false;
-            emitter.Play();
+            //emitter.Play();
         }
     }
 

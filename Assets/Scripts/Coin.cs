@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    public GameObject panelCoin; //Agregado por Ed
+    public GameObject panelCoin;
     public bool playerCoin;
 
     private void OnTriggerEnter(Collider other)
@@ -18,12 +18,13 @@ public class Coin : MonoBehaviour
 
         if (other.TryGetComponent(out InstanciarMoneda InstanciarMoneda) && playerCoin)
         {
-            Cursor.lockState = CursorLockMode.Confined;
-            Cursor.visible = true;
             InstanciarMoneda.amountOfCoins = 10;
             gameObject.SetActive(false);
-            panelCoin.SetActive(true); //Agregado por Ed
-            Time.timeScale = 0; //Agregado por Ed
+            
+            Cursor.lockState = CursorLockMode.Confined;
+            Cursor.visible = true;
+            panelCoin.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }
