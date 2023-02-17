@@ -28,5 +28,9 @@
 	</object>
 	<object class="LimiterEffect" id="{2e3c6a26-6d11-439d-8fcd-88fcd7b1b4ee}" />
 	<object class="MixerBusFader" id="{4e7510b7-68c6-42e4-98dd-0c7c96d11ca7}" />
-	<object class="LoudnessMeter" id="{f2f0326e-40e9-45ab-b5bb-056ce6356f6c}" />
+	<object class="LoudnessMeter" id="{f2f0326e-40e9-45ab-b5bb-056ce6356f6c}">
+		<property name="meterRange">
+			<value>1</value>
+		</property>
+	</object>
 </objects>

@@ -5,7 +5,7 @@
 			<value>02 Paso portal presente</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{ddac3d58-ba5a-4499-b663-3ddfb14a3dac}</destination>
@@ -55,7 +55,7 @@
 			<destination>{064be94a-f97f-48ec-9863-a01fb274bb15}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{13468e3d-1fa6-4f1c-89c1-b3293ff45cbe}</destination>
+			<destination>{96b86a24-5d72-410e-b159-578d239fccbf}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{b741f45b-6b51-4323-a424-753b31b6a66b}" />
@@ -200,7 +200,6 @@
 	<object class="MixerBusEffectChain" id="{65561dc6-36d9-46de-b119-a3987532663b}">
 		<relationship name="effects">
 			<destination>{df8f3fa1-b496-402c-be91-16361fbab059}</destination>
-			<destination>{9226faa6-f53c-4aec-8eb5-8bf6d88c01f7}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{378e1c36-7910-4baa-99fa-6cbcbef1f2b6}" />
@@ -248,10 +247,12 @@
 	</object>
 	<object class="MixerBusPanner" id="{241bafb6-fdfc-4a89-bca3-c264b50d169b}" />
 	<object class="MixerBusFader" id="{df8f3fa1-b496-402c-be91-16361fbab059}" />
-	<object class="SpatialiserEffect" id="{9226faa6-f53c-4aec-8eb5-8bf6d88c01f7}" />
 	<object class="SFXReverbEffect" id="{4e6b70ed-d6d4-4b6a-842b-72b61ec12a6e}">
 		<property name="decayTime">
-			<value>4200</value>
+			<value>16500</value>
+		</property>
+		<property name="wetLevel">
+			<value>-2.5</value>
 		</property>
 	</object>
 	<object class="ChorusEffect" id="{f404ca7d-42a6-43e3-885a-9039a067e7d4}">
@@ -295,7 +296,7 @@
 	</object>
 	<object class="SFXReverbEffect" id="{fa7b3a9c-084e-4652-be93-444b18838829}">
 		<property name="decayTime">
-			<value>2700</value>
+			<value>9500</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{2da73183-e401-4755-9414-ac3356b97aef}" />

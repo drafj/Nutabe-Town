@@ -5,7 +5,7 @@
 			<value>17 Prop Coge billetes del portafolio</value>
 		</property>
 		<property name="outputFormat">
-			<value>2</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{91adb70c-37e4-41f8-975a-1d45a6b9737c}</destination>
@@ -53,10 +53,17 @@
 			<destination>{7880b136-006b-4ea1-9ce6-86f758d3e452}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{96b86a24-5d72-410e-b159-578d239fccbf}</destination>
+			<destination>{13468e3d-1fa6-4f1c-89c1-b3293ff45cbe}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{e95ba31c-dac3-49c8-b53e-2b0c42de8444}" />
+	<object class="EventAutomatableProperties" id="{e95ba31c-dac3-49c8-b53e-2b0c42de8444}">
+		<property name="minimumDistance">
+			<value>0</value>
+		</property>
+		<property name="maximumDistance">
+			<value>8.55000019</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{b07bf54a-3d7b-4606-9d50-467bf7e630e6}" />
 	<object class="GroupTrack" id="{61fda953-d1c3-4846-a40a-8961b45b7d95}">
 		<relationship name="modules">
@@ -72,6 +79,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{d11f3cd6-f485-4740-b950-53dcec4b0c6c}">
+		<property name="volume">
+			<value>-5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{eaee0928-a5a6-424d-ac08-df49feed3ec4}</destination>
 		</relationship>
@@ -122,7 +132,6 @@
 	<object class="MixerBusEffectChain" id="{eaee0928-a5a6-424d-ac08-df49feed3ec4}">
 		<relationship name="effects">
 			<destination>{73410285-b5f6-40f9-91f6-3f34ac2f04e2}</destination>
-			<destination>{e58e7995-3b5e-4d38-a876-180210171ecc}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{72128531-b094-41b7-b2cc-decb4e007714}" />
@@ -142,10 +151,5 @@
 	</object>
 	<object class="MixerBusPanner" id="{ed22fca0-ca66-4af1-8315-9526f07054ef}" />
 	<object class="MixerBusFader" id="{73410285-b5f6-40f9-91f6-3f34ac2f04e2}" />
-	<object class="SpatialiserEffect" id="{e58e7995-3b5e-4d38-a876-180210171ecc}">
-		<property name="bypass">
-			<value>true</value>
-		</property>
-	</object>
 	<object class="MixerBusFader" id="{d4946e99-d335-410f-8b4c-7d01c96aff66}" />
 </objects>

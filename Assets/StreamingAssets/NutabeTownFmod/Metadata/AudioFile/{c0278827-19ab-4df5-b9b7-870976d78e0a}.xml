@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c0278827-19ab-4df5-b9b7-870976d78e0a}">
+		<property name="assetPath">
+			<value>MetalDrop 6106_74_2.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.2586666666666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{56cf1731-4433-496f-9709-d4dc8673799c}</destination>
+		</relationship>
+	</object>
+</objects>

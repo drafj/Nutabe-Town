@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{a46f9064-4bb5-4be9-9c26-ba2dd1d50de5}">
+		<property name="name">
+			<value>NPasado</value>
+		</property>
+		<relationship name="folder">
+			<destination>{f618be65-3442-48d8-a2f2-00c2679ad78b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{265b3fe5-4234-48fe-9f0f-247b650e1ebf}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{265b3fe5-4234-48fe-9f0f-247b650e1ebf}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.47999998927116394</value>
+		</property>
+		<property name="seekSpeedDescending">
+			<value>0.029999999329447746</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+		<relationship name="automators">
+			<destination>{08dacee5-1fc3-4961-87df-8051cca0f5fd}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{08dacee5-1fc3-4961-87df-8051cca0f5fd}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>cursorPosition</value>
+		</property>
+	</object>
+</objects>

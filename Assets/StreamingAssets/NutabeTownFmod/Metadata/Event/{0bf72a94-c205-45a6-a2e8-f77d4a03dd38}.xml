@@ -162,7 +162,7 @@
 			<destination>{fac85d2a-860d-496f-b6cc-2803875ca50a}</destination>
 			<destination>{2d8fd5f3-823b-4767-8dfd-9b9f545fed54}</destination>
 			<destination>{92a761ca-20c1-4ee3-a9ce-2e8a9580df01}</destination>
-			<destination>{d6199886-5209-4153-9010-7ce95e38490a}</destination>
+			<destination>{1e60274a-1451-4c09-a636-9f977751f45d}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{90194b41-0e2f-481c-960c-b9616af882a0}" />
@@ -221,6 +221,13 @@
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{92a761ca-20c1-4ee3-a9ce-2e8a9580df01}" />
-	<object class="SpatialiserEffect" id="{d6199886-5209-4153-9010-7ce95e38490a}" />
+	<object class="SpatialiserEffect" id="{1e60274a-1451-4c09-a636-9f977751f45d}">
+		<property name="extentMode">
+			<value>1</value>
+		</property>
+		<property name="soundSize">
+			<value>0.25</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{b9c1dba3-d555-4683-a178-2d437275a697}" />
 </objects>

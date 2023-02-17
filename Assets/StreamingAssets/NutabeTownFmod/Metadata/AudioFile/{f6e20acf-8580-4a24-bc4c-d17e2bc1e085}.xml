@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{f6e20acf-8580-4a24-bc4c-d17e2bc1e085}">
+		<property name="assetPath">
+			<value>HitRock 6095_59_1.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.56533333333333335</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{56cf1731-4433-496f-9709-d4dc8673799c}</destination>
+		</relationship>
+	</object>
+</objects>

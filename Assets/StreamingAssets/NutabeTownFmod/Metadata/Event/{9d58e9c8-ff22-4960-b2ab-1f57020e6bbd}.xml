@@ -56,10 +56,17 @@
 			<destination>{9267b814-f297-4d23-aa9b-4c90bf937039}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{96b86a24-5d72-410e-b159-578d239fccbf}</destination>
+			<destination>{13468e3d-1fa6-4f1c-89c1-b3293ff45cbe}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{a545dada-6f5a-4284-8c63-256e84ff7eb9}" />
+	<object class="EventAutomatableProperties" id="{a545dada-6f5a-4284-8c63-256e84ff7eb9}">
+		<property name="minimumDistance">
+			<value>0</value>
+		</property>
+		<property name="maximumDistance">
+			<value>8.55000019</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{159febf8-f8ef-4a5f-ba43-7199a0a51e9b}" />
 	<object class="GroupTrack" id="{17d055a9-1dd6-44eb-8179-0ee5e0f43db3}">
 		<relationship name="automationTracks">
@@ -190,6 +197,12 @@
 	<object class="SpatialiserEffect" id="{24c57745-562d-4c42-8c9f-1732543d70e7}">
 		<property name="bypass">
 			<value>true</value>
+		</property>
+		<property name="minimumDistance">
+			<value>0</value>
+		</property>
+		<property name="maximumDistance">
+			<value>8.55000019</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{403d183c-123a-4b25-a884-6c66152ad267}">

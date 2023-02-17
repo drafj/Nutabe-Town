@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{a2a0d42b-4626-42ec-b5f2-d0f1dc7799b8}">
+		<property name="assetPath">
+			<value>WhistleSteam 6060_61_1 - Trimmed.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>4.4546458333333332</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{56cf1731-4433-496f-9709-d4dc8673799c}</destination>
+		</relationship>
+	</object>
+</objects>

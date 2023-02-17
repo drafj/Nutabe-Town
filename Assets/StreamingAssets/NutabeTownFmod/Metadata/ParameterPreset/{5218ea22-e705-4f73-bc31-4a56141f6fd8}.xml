@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{5218ea22-e705-4f73-bc31-4a56141f6fd8}">
+		<property name="name">
+			<value>pasado</value>
+		</property>
+		<relationship name="folder">
+			<destination>{f618be65-3442-48d8-a2f2-00c2679ad78b}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{ff8c2690-0db5-4f12-9b6b-4c098aa731ae}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{ff8c2690-0db5-4f12-9b6b-4c098aa731ae}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.10999999940395355</value>
+		</property>
+	</object>
+</objects>
