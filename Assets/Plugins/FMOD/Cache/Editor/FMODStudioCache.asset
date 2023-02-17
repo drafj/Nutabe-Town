@@ -1,5 +1,29 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8983379194555112850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Narracion_Intro/NIntro
+  m_EditorClassIdentifier: 
+  Name: NIntro
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 3044403458
+    data2: 308896510
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-8974332080981573272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54,6 +78,57 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3413
+--- !u!114 &-8220436988333369282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Narracion_Pasado/NPasado
+  m_EditorClassIdentifier: 
+  Name: NPasado
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1820549548
+    data2: 2868089843
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-8021755227886765201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prop/Ocarina
+  m_EditorClassIdentifier: 
+  Path: event:/Prop/Ocarina
+  Guid:
+    Data1: -442294185
+    Data2: 1248477504
+    Data3: 366286777
+    Data4: -424441172
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 8000
 --- !u!114 &-7645757239806195874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +156,57 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 766
+--- !u!114 &-7421365808804962091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/AlertaConquistador/rezando
+  m_EditorClassIdentifier: 
+  Name: rezando
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 77020477
+    data2: 2858139846
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-7318699436824845903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/GameOver
+  m_EditorClassIdentifier: 
+  Path: snapshot:/GameOver
+  Guid:
+    Data1: -1879634159
+    Data2: 1233931680
+    Data3: -611135817
+    Data4: -146865659
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-7045612053957448182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,8 +258,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 8.55
   Length: 1156
 --- !u!114 &-6071806837531140678
 MonoBehaviour:
@@ -240,7 +366,8 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 872155945766355064}
   MinDistance: 1
   MaxDistance: 20
   Length: 89072
@@ -268,6 +395,30 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-4420219544083803842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/NActualidad
+  m_EditorClassIdentifier: 
+  Name: NActualidad
+  StudioPath: parameter:/NActualidad
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 2131914920
+    data2: 225343325
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-3829694391238061550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,10 +434,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/NutabeTownFmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638121776609372230
+  lastModified: 638121529250553491
   FileSizes:
   - Name: Desktop
-    Value: 2592
+    Value: 3134
   Exists: 1
 --- !u!114 &-3339688384403967917
 MonoBehaviour:
@@ -314,7 +465,34 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 406
+  Length: 543
+--- !u!114 &-2911323916406486012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Portal In
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Portal In
+  Guid:
+    Data1: -480611719
+    Data2: 1224790223
+    Data3: 485500307
+    Data4: 1462035381
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-2826264518142602280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -336,7 +514,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 8882422088755429368}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -391,6 +569,54 @@ MonoBehaviour:
     data2: 4102739662
   Type: 0
   IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-1074708778750999461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Cura_ataque/rezando
+  m_EditorClassIdentifier: 
+  Name: rezando
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 77020477
+    data2: 2858139846
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-773899218781045641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/NPasado
+  m_EditorClassIdentifier: 
+  Name: NPasado
+  StudioPath: parameter:/NPasado
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1820549548
+    data2: 2868089843
+  Type: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
 --- !u!114 &-347681248586298559
@@ -468,12 +694,12 @@ MonoBehaviour:
   Banks:
   - {fileID: 8882422088755429368}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1693
+  Length: 1633
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,7 +733,6 @@ MonoBehaviour:
   - {fileID: 4764462490872253030}
   - {fileID: 2938019121030205840}
   - {fileID: 864919574882138975}
-  - {fileID: 9197025371329397920}
   - {fileID: 9085538186651147695}
   - {fileID: 440737762770331436}
   - {fileID: -6810629731486158687}
@@ -521,13 +746,50 @@ MonoBehaviour:
   - {fileID: -5404580783418533371}
   - {fileID: -2760847671728690647}
   - {fileID: -4956899101213978712}
-  EditorParameters: []
+  - {fileID: -7318699436824845903}
+  - {fileID: 1090831485567769469}
+  - {fileID: -8021755227886765201}
+  - {fileID: 3996007835434341709}
+  - {fileID: 7315691658591576897}
+  - {fileID: -2911323916406486012}
+  - {fileID: 421124950346709919}
+  - {fileID: 550989348841017978}
+  EditorParameters:
+  - {fileID: -4420219544083803842}
+  - {fileID: -773899218781045641}
   MasterBanks:
   - {fileID: 8882422088755429368}
   StringsBanks:
   - {fileID: -3829694391238061550}
-  cacheTime: 638121776610342448
+  cacheTime: 638121529250553491
   cacheVersion: 131601
+--- !u!114 &421124950346709919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Reinicio escena
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Reinicio escena
+  Guid:
+    Data1: 1690183869
+    Data2: 1155440522
+    Data3: 687348158
+    Data4: 1713641043
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &440737762770331436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -549,12 +811,40 @@ MonoBehaviour:
   Banks:
   - {fileID: 8882422088755429368}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
+  MinDistance: 0
+  MaxDistance: 8.55
+  Length: 2773
+--- !u!114 &550989348841017978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/narracion/Narracion_Actualidad
+  m_EditorClassIdentifier: 
+  Path: event:/narracion/Narracion_Actualidad
+  Guid:
+    Data1: 1819525568
+    Data2: 1304984718
+    Data3: 99892611
+    Data4: 935134399
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 2956028412607704320}
   MinDistance: 1
   MaxDistance: 20
-  Length: 2773
+  Length: 49500
 --- !u!114 &864919574882138975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,6 +872,57 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 620
+--- !u!114 &872155945766355064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Mx/pasado
+  m_EditorClassIdentifier: 
+  Name: pasado
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2138086997
+    data2: 2235070999
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &1090831485567769469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prop/Oro
+  m_EditorClassIdentifier: 
+  Path: event:/Prop/Oro
+  Guid:
+    Data1: -1829784503
+    Data2: 1144560161
+    Data3: -1481075282
+    Data4: 834070851
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 900
 --- !u!114 &1641085348234778944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -605,9 +946,10 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: -1074708778750999461}
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 65
   Length: 4000
 --- !u!114 &2402113625975313378
 MonoBehaviour:
@@ -658,7 +1000,7 @@ MonoBehaviour:
   Banks:
   - {fileID: 8882422088755429368}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -689,8 +1031,32 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
-  MaxDistance: 20
+  MaxDistance: 30
   Length: 47233
+--- !u!114 &2956028412607704320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Narracion_Actualidad/NActualidad
+  m_EditorClassIdentifier: 
+  Name: NActualidad
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 2131914920
+    data2: 225343325
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &3705805870928654380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -714,10 +1080,38 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
+  Parameters:
+  - {fileID: -8983379194555112850}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 85974
+--- !u!114 &3996007835434341709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Prop/OcarinaPartes
+  m_EditorClassIdentifier: 
+  Path: event:/Prop/OcarinaPartes
+  Guid:
+    Data1: 59339123
+    Data2: 1118657086
+    Data3: -1889164138
+    Data4: -734330761
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 76974
+  Length: 693
 --- !u!114 &4034027022179609978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -768,10 +1162,12 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: 4902243297707391802}
+  - {fileID: -8220436988333369282}
   MinDistance: 1
   MaxDistance: 20
-  Length: 55746
+  Length: 63000
 --- !u!114 &4764462490872253030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -796,9 +1192,9 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1727
+  MinDistance: 2.2
+  MaxDistance: 8.6
+  Length: 1579
 --- !u!114 &4811480168178899947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -826,6 +1222,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 45
   Length: 1164
+--- !u!114 &4902243297707391802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Narracion_Pasado/NActualidad
+  m_EditorClassIdentifier: 
+  Name: NActualidad
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 2131914920
+    data2: 225343325
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &6540702176941567617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -880,6 +1300,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 3750
+--- !u!114 &7315691658591576897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/vigilante/AlertaConquistador
+  m_EditorClassIdentifier: 
+  Path: event:/vigilante/AlertaConquistador
+  Guid:
+    Data1: -1434604171
+    Data2: 1143670453
+    Data3: 1431466418
+    Data4: 1447019378
+  Banks:
+  - {fileID: 8882422088755429368}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -7421365808804962091}
+  MinDistance: 1
+  MaxDistance: 90
+  Length: 0
 --- !u!114 &7894637121447742430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -904,8 +1352,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 7.6
+  MaxDistance: 70
   Length: 1880
 --- !u!114 &8882422088755429368
 MonoBehaviour:
@@ -922,10 +1370,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/NutabeTownFmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638121776610342448
+  lastModified: 638121529250493471
   FileSizes:
   - Name: Desktop
-    Value: 10726912
+    Value: 11192576
   Exists: 1
 --- !u!114 &9085538186651147695
 MonoBehaviour:
@@ -954,30 +1402,3 @@ MonoBehaviour:
   MinDistance: 0.7
   MaxDistance: 100
   Length: 4590
---- !u!114 &9197025371329397920
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/narracion/Narracion_Actualida
-  m_EditorClassIdentifier: 
-  Path: event:/narracion/Narracion_Actualida
-  Guid:
-    Data1: 1819525568
-    Data2: 1304984718
-    Data3: 99892611
-    Data4: 935134399
-  Banks:
-  - {fileID: 8882422088755429368}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 42554

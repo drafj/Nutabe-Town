@@ -8644,7 +8644,7 @@ MonoBehaviour:
   fade: {fileID: 1887941992}
   playerController: {fileID: 833912334}
   freeLook: {fileID: 1379027342}
-  emitter: {fileID: 0}
+  emitter: {fileID: 1325748323}
   enemies: []
 --- !u!114 &833912331
 MonoBehaviour:
@@ -8659,8 +8659,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ocarinaCont: 0
-  SonidoPartes: event:/Prop/OcarinaPartes
-  SonidoOcarina: event:/Prop/Ocarina
 --- !u!114 &833912334 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2673592820024983906, guid: 413a33d5affe80c40b24802c63d53fe6,
@@ -13858,7 +13856,7 @@ PrefabInstance:
     - target: {fileID: 658562508896185740, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.054203287
+      value: 0.0542033
       objectReference: {fileID: 0}
     - target: {fileID: 658562508896185740, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
@@ -13868,7 +13866,7 @@ PrefabInstance:
     - target: {fileID: 658562508896185740, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.015702792
+      value: 0.015702797
       objectReference: {fileID: 0}
     - target: {fileID: 842108526068671712, guid: 413a33d5affe80c40b24802c63d53fe6,
         type: 3}
