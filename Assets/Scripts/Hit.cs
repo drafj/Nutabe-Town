@@ -12,17 +12,29 @@ public class Hit : MonoBehaviour
     {
         if (other.TryGetComponent(out PlayerController playerController))
         {
-            GetComponent<FMODUnity.StudioEventEmitter>().Play();
+
+            
+
+            FMODUnity.StudioEventEmitter emitter = this.GetComponent<FMODUnity.StudioEventEmitter>();
+            if (emitter != null)
+            {
+                emitter.Play();
+                FMODUnity.RuntimeManager.CreateInstance("snapshot:/GameOver").start();
+                //Debug.Log("HitPlay");
+            }
+            
             Invoke("WaitFade", 3f);
             fade.Lose();
             playerController.GetComponent<Movement>().enabled = false;
             freeLook.enabled = false;
-            //emitter.Play();
+
+            
         }
     }
 
     void WaitFade()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        FMODUnity.RuntimeManager.CreateInstance("snapshot:/Reinicio escena").start();
     }
 }

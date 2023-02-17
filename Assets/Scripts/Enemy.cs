@@ -26,6 +26,7 @@ public class Enemy : Human
     public bool follow;
     public Transform toFollow;
     private FMOD.Studio.EventInstance instance;
+    public string SonidoDeAlerta = "event:/vigilante/03 Vigilante Alerta";
 
     void Start()
     {
@@ -60,7 +61,8 @@ public class Enemy : Human
                     else if (DistanceTo(playerPosition) <= sightRange && !bribed)
                     {
                         //reproducir sonido de alerta
-                        instance = FMODUnity.RuntimeManager.CreateInstance("event:/vigilante/03 Vigilante Alerta");
+                        instance = FMODUnity.RuntimeManager.CreateInstance(SonidoDeAlerta);
+                        //GetComponent<PlayFmod>().playSound(1);
                         FMODUnity.RuntimeManager.AttachInstanceToGameObject(instance, GetComponent<Transform>(), GetComponent<Rigidbody>());
                         instance.start(); 
 

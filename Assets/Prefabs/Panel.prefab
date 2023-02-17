@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8391777070236470996}
   - component: {fileID: 8391777070236470999}
   - component: {fileID: 8391777070236470998}
+  - component: {fileID: 2134004781616254331}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -111,3 +112,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 8391777070236470999}
+--- !u!114 &2134004781616254331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8391777070236471000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1879634159
+      Data2: 1233931680
+      Data3: -611135817
+      Data4: -146865659
+    Path: snapshot:/GameOver
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0

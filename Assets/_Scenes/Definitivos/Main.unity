@@ -269,7 +269,7 @@ MonoBehaviour:
     Path: event:/narracion/Narracion_Intro
   Event: 
   PlayEvent: 1
-  StopEvent: 2
+  StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 1
   Preload: 0

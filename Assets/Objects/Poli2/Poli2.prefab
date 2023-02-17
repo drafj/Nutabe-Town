@@ -972,8 +972,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 192
   enemyType: 1
+  canGetCoins: 0
   follow: 0
   toFollow: {fileID: 0}
+  SonidoDeAlerta: event:/vigilante/03 Vigilante Alerta
 --- !u!195 &3030551584091383923
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1155,7 +1157,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fade: {fileID: 0}
   freeLook: {fileID: 0}
-  emitter: {fileID: 0}
 --- !u!1 &3039432265862637199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1472,8 +1473,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 45
 --- !u!1 &4591351053673514189
 GameObject:
   m_ObjectHideFlags: 0
@@ -2370,7 +2371,7 @@ MonoBehaviour:
   PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
-  TriggerOnce: 0
+  TriggerOnce: 1
   Preload: 0
   Params: []
   OverrideAttenuation: 0

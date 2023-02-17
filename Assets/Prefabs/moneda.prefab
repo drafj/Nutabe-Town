@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a07874e0cfe2c3d40909e06fac33d3e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  panelCoin: {fileID: 0}
   playerCoin: 0
 --- !u!65 &6142338190078506804
 BoxCollider:
@@ -150,12 +151,12 @@ MonoBehaviour:
       Data4: 1469116236
     Path: event:/Prop/16 Prop Suelta Moneda
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 1
   Preload: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0

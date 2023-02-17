@@ -283,7 +283,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/NutabeTownFmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638120693135384121
+  lastModified: 638121776609372230
   FileSizes:
   - Name: Desktop
     Value: 2592
@@ -526,7 +526,7 @@ MonoBehaviour:
   - {fileID: 8882422088755429368}
   StringsBanks:
   - {fileID: -3829694391238061550}
-  cacheTime: 638120693135384121
+  cacheTime: 638121776610342448
   cacheVersion: 131601
 --- !u!114 &440737762770331436
 MonoBehaviour:
@@ -922,7 +922,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/NutabeTownFmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638120693135334107
+  lastModified: 638121776610342448
   FileSizes:
   - Name: Desktop
     Value: 10726912

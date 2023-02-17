@@ -9,11 +9,16 @@ public class InstanciarMoneda : MonoBehaviour
     public Transform creador;
     public int amountOfCoins;
     public bool canTakeCoins;
+    private FMOD.Studio.EventInstance instance;
 
     void Update()
     {
         if (Input.GetKeyDown("e") && amountOfCoins > 0 && canTakeCoins)
         {
+            instance = FMODUnity.RuntimeManager.CreateInstance("event:/Prop/16 Prop Suelta Moneda");
+            FMODUnity.RuntimeManager.AttachInstanceToGameObject(instance, GetComponent<Transform>(), GetComponent<Rigidbody>());
+            instance.start();
+
             CrearMoneda();
             amountOfCoins--;
         }
