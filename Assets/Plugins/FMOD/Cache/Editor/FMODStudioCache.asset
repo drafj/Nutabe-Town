@@ -434,7 +434,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/NutabeTownFmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638121529250553491
+  lastModified: 638122329174063413
   FileSizes:
   - Name: Desktop
     Value: 3134
@@ -761,7 +761,7 @@ MonoBehaviour:
   - {fileID: 8882422088755429368}
   StringsBanks:
   - {fileID: -3829694391238061550}
-  cacheTime: 638121529250553491
+  cacheTime: 638122329174063413
   cacheVersion: 131601
 --- !u!114 &421124950346709919
 MonoBehaviour:
@@ -1163,7 +1163,6 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 1
   Parameters:
-  - {fileID: 4902243297707391802}
   - {fileID: -8220436988333369282}
   MinDistance: 1
   MaxDistance: 20
@@ -1222,30 +1221,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 45
   Length: 1164
---- !u!114 &4902243297707391802
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Narracion_Pasado/NActualidad
-  m_EditorClassIdentifier: 
-  Name: NActualidad
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 1
-  ID:
-    data1: 2131914920
-    data2: 225343325
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
 --- !u!114 &6540702176941567617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1370,10 +1345,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/NutabeTownFmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638121529250493471
+  lastModified: 638122329174013399
   FileSizes:
   - Name: Desktop
-    Value: 11192576
+    Value: 11192480
   Exists: 1
 --- !u!114 &9085538186651147695
 MonoBehaviour:
